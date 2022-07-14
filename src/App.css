@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.container {
+    position: relative;
+    display: block;
+    max-width: 390px;
+    height:100vh;
+    margin: 0 auto;
+}
+.App {
+    background-color: #999;
+}
