@@ -3,33 +3,57 @@
         {
             "id":1,
             "name":"제주도",
+            "image":"assets/img/main/main_1.png",
             "detail":[
-                "성산일출봉",
-                "섭지코지",
-                "곽지해수욕장",
-                "한담해변",
-                "협재해수욕장",
-                "금능해수욕장"
+                {
+                    "name" : "성산일출봉",
+                    "image" : "assets/img/main/064/064_1.png"
+                },
+                {
+                    "name" : "섭지코지",
+                    "image" : "assets/img/main/064/064_2.png"
+                },
+                {
+                    "name" : "곽지해수욕장",
+                    "image" : "assets/img/main/064/064_3.png"
+                },
+                {
+                    "name" : "한담해변",
+                    "image" : "assets/img/main/064/064_4.png"
+                },
+                {
+                    "name" : "협재해수욕장",
+                    "image" : "assets/img/main/064/064_5.png"
+                },
+                {
+                    "name" : "금능해수욕장",
+                    "image" : "assets/img/main/064/064_6.png"
+                }
             ]
         },{
             "id":2,
             "name":"부산",
+            "image":"assets/img/main/main_2.png",
             "detail":[]
         },{
             "id":3,
             "name":"강릉",
+            "image":"assets/img/main/main_3.png",
             "detail":[]
         },{
             "id":4,
             "name":"속초",
+            "image":"assets/img/main/main_4.png",
             "detail":[]
         },{
             "id":5,
             "name":"여수",
+            "image":"assets/img/main/main_5.png",
             "detail":[]
         },{
             "id":6,
             "name":"서울",
+            "image":"assets/img/main/main_6.png",
             "detail":[]
         }
     ]

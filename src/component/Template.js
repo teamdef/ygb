@@ -1,31 +1,39 @@
 import React from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import Data from '../data.json';
 
 const Template = () => {
+    console.log();
     return (
         <TemplateEl className="Template">
             
-            <Link to="/detail/0" className="card">
+            <Link to="/0" className="card">
+                <img src={Data.region[0].image} alt="여행지이미지" />
                 <span className="card-title">제주도</span>
             </Link>
-            <Link to="/detail/1" className="card">
+            <Link to="/404" className="card">
+                <img src={Data.region[1].image} alt="여행지이미지" />
                 <span className="card-title">부산</span>
                 <div className="cap"><span>comming soon</span></div>
             </Link>
-            <Link to="/detail/2" className="card">
+            <Link to="/404" className="card">
+                <img src={Data.region[2].image} alt="여행지이미지" />
                 <span className="card-title">강릉</span>
                 <div className="cap"><span>comming soon</span></div>
             </Link>
-            <Link to="/detail/3" className="card">
+            <Link to="/404" className="card">
+                <img src={Data.region[3].image} alt="여행지이미지" />
                 <span className="card-title">속초</span>
                 <div className="cap"><span>comming soon</span></div>
             </Link>
-            <Link to="/detail/4" className="card">
+            <Link to="/404" className="card">
+                <img src={Data.region[4].image} alt="여행지이미지" />
                 <span className="card-title">여수</span>
                 <div className="cap"><span>comming soon</span></div>
             </Link>
-            <Link to="/detail/5" className="card">
+            <Link to="/404" className="card">
+                <img src={Data.region[5].image} alt="여행지이미지" />
                 <span className="card-title">서울</span>
                 <div className="cap"><span>comming soon</span></div>
             </Link>
@@ -52,11 +60,16 @@ const TemplateEl = styled.div`
         height:80%;
         border-radius: 20px;
         box-shadow: 2px 4px 4px 2px #999;
-        background-color: #A6DBE1;
+        background-color: #000;
         overflow:hidden;
         cursor:pointer;
+        img {
+            width: 100%;
+            height: 100%;
+        }
         & .card-title {
             position: absolute;
+            text-shadow: 1px 1px 3px #000;
             top:50%;
             left:50%;
             transform: translate(-50%,-50%);
@@ -66,11 +79,21 @@ const TemplateEl = styled.div`
             font-weight: bold;
             white-space: nowrap;
         }
+        &::before {
+            content:'';
+            position:absolute;
+            top: 0;
+            display:block;
+            width:100%;
+            height:100%;
+            background-color:rgba(255,255,255,.3);
+        }
         & .cap {
-            position:relative;
+            position:absolute;
+            top: 0;
             width: 100%;
             height: 100%;
-            background-color:rgba(0,0,0,.5);
+            background-color:rgba(0,0,0,.7);
             cursor:default;
             & span {
                 position:absolute;

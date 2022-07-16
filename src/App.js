@@ -1,6 +1,7 @@
 import './App.css';
 import Main from "./pages/Main"
 import Detail from "./pages/Detail"
+import NotFound from "./pages/NotFound"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <BrowserRouter>
 		    <Routes>
           <Route path="/" element={<Main />}></Route>
-          <Route path="/detail/:regionId" element={<Detail />}></Route>
+          <Route path="/:regionId" element={<Detail />}></Route>
+          <Route path="/404" element={<NotFound />}></Route>
 		    </Routes>
 		  </BrowserRouter>
       </div>

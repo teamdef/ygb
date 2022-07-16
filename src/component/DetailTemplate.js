@@ -4,27 +4,32 @@ import { Link,useParams } from 'react-router-dom';
 import Data from '../data.json';
 const DetailTemplate = () => {
     const { regionId } = useParams();
-    console.log(Data);
-    console.log(Data.region[regionId]);
+    
     return (
         <TemplateEl className="Template">
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[0]}</span>
+                <img src={Data.region[regionId].detail[0].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[0].name}</span>
             </Link>
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[1]}</span>
+                <img src={Data.region[regionId].detail[1].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[1].name}</span>
             </Link>
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[2]}</span>
+                <img src={Data.region[regionId].detail[2].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[2].name}</span>
             </Link>
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[3]}</span>
+                <img src={Data.region[regionId].detail[3].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[3].name}</span>
             </Link>
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[4]}</span>
+                <img src={Data.region[regionId].detail[4].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[4].name}</span>
             </Link>
             <Link to="/detail" className="card">
-                <span className="card-title">{Data.region[regionId].detail[5]}</span>
+                <img src={Data.region[regionId].detail[5].image} alt="여행지이미지" />
+                <span className="card-title">{Data.region[regionId].detail[5].name}</span>
             </Link>
         </TemplateEl>
     )
@@ -52,6 +57,10 @@ const TemplateEl = styled.div`
         background-color: #A6DBE1;
         overflow:hidden;
         cursor:pointer;
+        img {
+            width: 100%;
+            height: 100%;
+        }
         & .card-title {
             position: absolute;
             top:50%;

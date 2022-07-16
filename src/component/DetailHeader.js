@@ -2,12 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 import { useParams } from 'react-router-dom';
 const DetailHeader = () => {
-    const { regionId } = useParams();
-    const regionName = ["제주도","부산","강릉","속초","여수","서울"];
-
     return (
         <HeaderEl className="header">
-            <h1>{regionName[regionId]}</h1>
+            <img src="assets/img/head/head_2.png" alt="지역 헤더 이미지" />
         </HeaderEl>
     )
 }
@@ -20,7 +17,11 @@ const HeaderEl = styled.div`
     position: relative;
     height: 30%;
     background-color: #A6DBE1;
-    
+    img {
+        display: block;
+        width:100%;
+        height: 100%;
+    }
     & h1 {
         position: absolute;
         left: 10%;
