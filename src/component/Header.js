@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
 const Header = () => {
+    const { regionId } = useParams();
+    const [detail, setDetail] = useState(false);
+    const isDetail = () => {
+        if(regionId != undefined && detail == false){
+            setDetail(current => !current);
+        }
+    }
+    isDetail();
     return (
         <HeaderEl className="header">
             <img src="assets/img/head/head_1.png" alt="요근방 헤더 이미지" />

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import DetailHeader from '../component/DetailHeader';
-import DetailTemplate from '../component/DetailTemplate';
-const Detail = () => {
+import RoomHeader from '../component/RoomHeader'
+import RoomList from '../component/RoomList'
+const Room = () => {
     return (
         <Contents>
-            <DetailHeader/>
-            <DetailTemplate/>
+            <RoomHeader />
+            <RoomList />
         </Contents>
     )
 }
@@ -20,4 +20,4 @@ const Contents = styled.div`
 `;
 
 
-export default Detail;
+export default Room;

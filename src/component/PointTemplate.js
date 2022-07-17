@@ -2,32 +2,32 @@ import React from 'react';
 import styled from "styled-components";
 import { Link,useParams } from 'react-router-dom';
 import Data from '../data.json';
-const DetailTemplate = () => {
+const PointTemplate = () => {
     const { regionId } = useParams();
     
     return (
         <TemplateEl className="Template">
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[0].id}`} className="card">
                 <img src={Data.region[regionId].detail[0].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[0].name}</span>
             </Link>
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[1].id}`} className="card">
                 <img src={Data.region[regionId].detail[1].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[1].name}</span>
             </Link>
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[2].id}`} className="card">
                 <img src={Data.region[regionId].detail[2].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[2].name}</span>
             </Link>
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[3].id}`} className="card">
                 <img src={Data.region[regionId].detail[3].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[3].name}</span>
             </Link>
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[4].id}`} className="card">
                 <img src={Data.region[regionId].detail[4].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[4].name}</span>
             </Link>
-            <Link to="/detail" className="card">
+            <Link to={`/room/${Data.region[regionId].detail[5].id}`} className="card">
                 <img src={Data.region[regionId].detail[5].image} alt="여행지이미지" />
                 <span className="card-title">{Data.region[regionId].detail[5].name}</span>
             </Link>
@@ -70,7 +70,17 @@ const TemplateEl = styled.div`
             color: #fff;
             font-size: 1.5rem;
             font-weight: bold;
+            text-shadow: 1px 1px 3px #000;
             white-space: nowrap;
+        }
+        &::before {
+            content:'';
+            position:absolute;
+            top: 0;
+            display:block;
+            width:100%;
+            height:100%;
+            background-color:rgba(255,255,255,.3);
         }
         & .cap {
             position:relative;
@@ -93,4 +103,4 @@ const TemplateEl = styled.div`
 `
 
 
-export default DetailTemplate;
+export default PointTemplate;
