@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
-import Distance5min from './Distance5min';
-import Distance10min from './Distance10min';
-import Distance15min from './Distance15min';
+import Card from './Card';
+import Data from "../data.json";
+const RoomList = (props) => {
+    let items = Data.region[props.regionId].detail[props.pointId].items;
+    if(props.type != 0) {items = items.filter(item => item.type === props.type)};
+    console.log(props.type);
+    console.log(items.filter(item => item.type === props.type));
 
-const RoomList = () => {
+    const itemList = items.map((item,index) => (
+        <Card item={item} key={index}/>
+    )) 
     return (
         <RoomListLayout>
-            <Distance5min/>
-            <Distance10min/>
-            <Distance15min/>
+            {itemList}
         </RoomListLayout>
     )
 }

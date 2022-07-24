@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from "styled-components";
-const Main = () => {
+const NotFound = () => {
     return (
         <Contents>
             페이지를 찾을 수 없습니다 !
@@ -21,4 +21,4 @@ const Contents = styled.div`
 `;
 
 
-export default Main;
+export default NotFound;

@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
 		    <Routes>
           <Route path="/" element={<Main />}></Route>
-          <Route path="/:regionId" element={<Point />}></Route>
-          <Route path="/room/:detailId" element={<Room />}></Route>
+          <Route path="/:regionName" element={<Point />}></Route>
+          <Route path="/:regionName/:detailId" element={<Room />}></Route>
           <Route path="/404" element={<NotFound />}></Route>
 		    </Routes>
 		  </BrowserRouter>

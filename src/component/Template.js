@@ -4,38 +4,17 @@ import { Link,useParams } from 'react-router-dom';
 import Data from '../data.json';
 
 const Template = () => {
-    console.log(Data.region[0].id - 1);
+    const region = Data.region;
+    const regionList = region.map((region) => (
+        <Link to={`/${region.name}`} className="card" state= {{id : region.id}} key={region.id}>
+                <img src={region.image} alt="여행지이미지" />
+                <span className="card-title">{region.name}</span>
+                {region.open ? '' : <div className="cap"><span>comming soon</span></div>}
+            </Link>
+    ))
     return (
         <TemplateEl className="Template">
-            <Link to='/0' className="card">
-                <img src={Data.region[0].image} alt="여행지이미지" />
-                <span className="card-title">제주도</span>
-            </Link>
-            <Link to='/404' className="card">
-                <img src={Data.region[1].image} alt="여행지이미지" />
-                <span className="card-title">부산</span>
-                <div className="cap"><span>comming soon</span></div>
-            </Link>
-            <Link to='/404' className="card">
-                <img src={Data.region[2].image} alt="여행지이미지" />
-                <span className="card-title">강릉</span>
-                <div className="cap"><span>comming soon</span></div>
-            </Link>
-            <Link to='/404' className="card">
-                <img src={Data.region[3].image} alt="여행지이미지" />
-                <span className="card-title">속초</span>
-                <div className="cap"><span>comming soon</span></div>
-            </Link>
-            <Link to='/404' className="card">
-                <img src={Data.region[4].image} alt="여행지이미지" />
-                <span className="card-title">여수</span>
-                <div className="cap"><span>comming soon</span></div>
-            </Link>
-            <Link to='/404' className="card">
-                <img src={Data.region[5].image} alt="여행지이미지" />
-                <span className="card-title">서울</span>
-                <div className="cap"><span>comming soon</span></div>
-            </Link>
+            {regionList}
         </TemplateEl>
     )
 }

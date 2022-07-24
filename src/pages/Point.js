@@ -2,11 +2,15 @@ import React from 'react';
 import styled from "styled-components";
 import PointHeader from '../component/PointHeader';
 import PointTemplate from '../component/PointTemplate';
+import { useLocation } from 'react-router-dom';
+
 const Point = () => {
+    const location = useLocation();
+    const id = location.state.id;
     return (
         <Contents>
             <PointHeader/>
-            <PointTemplate/>
+            <PointTemplate id={id}/>
         </Contents>
     )
 }

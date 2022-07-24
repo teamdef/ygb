@@ -3,39 +3,12 @@
         {
             "id":1,
             "name":"제주도",
-            "open":true,
             "image":"assets/img/main/main_1.png",
             "detail":[
                 {
                     "id" : 220641,
                     "name" : "성산일출봉",
-                    "image" : "assets/img/main/064/064_1.png",
-                    "items" : [
-                        {
-                            "id" : 220641001,
-                            "name" : "플레이스 캠프 제주",
-                            "time" : 5,
-                            "price" : 66374,
-                            "type" : 3,
-                            "url" : "https://hotels.naver.com/item/rates?hotelFileName=hotel:Playce_Camp_Jeju"
-                        },
-                        {
-                            "id" : 220641002,
-                            "name" : "골든튤립호텔 성산",
-                            "time" : 5,
-                            "price" : 70626,
-                            "type" : 3,
-                            "url" : "https://hotels.naver.com/item/rates?hotelFileName=hotel%3AGolden_Tulip_Jeju_Seongsan_Hotel"
-                        },
-                        {
-                            "id" : 220641003,
-                            "name" : "코업시티호텔 성산",
-                            "time" : 15,
-                            "price" : 54077,
-                            "type" : 3,
-                            "url" : "https://hotels.naver.com/item/rates?hotelFileName=hotel%3ACo_op_City_Hotel_Seongsan"
-                        }
-                    ]
+                    "image" : "assets/img/main/064/064_1.png"
                 },
                 {
                     "id" : 220642,
@@ -66,31 +39,26 @@
         },{
             "id":2,
             "name":"부산",
-            "open":false,
             "image":"assets/img/main/main_2.png",
             "detail":[]
         },{
             "id":3,
             "name":"강릉",
-            "open":false,
             "image":"assets/img/main/main_3.png",
             "detail":[]
         },{
             "id":4,
             "name":"속초",
-            "open":false,
             "image":"assets/img/main/main_4.png",
             "detail":[]
         },{
             "id":5,
             "name":"여수",
-            "open":false,
             "image":"assets/img/main/main_5.png",
             "detail":[]
         },{
             "id":6,
             "name":"서울",
-            "open":false,
             "image":"assets/img/main/main_6.png",
             "detail":[]
         }

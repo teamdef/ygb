@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
+import Data from "../data.json"
+
+// const price = () => {} 단위 반점 구현 예정
 const Distance5min = () => {
     return (
         <DistanceLayout>
@@ -9,12 +12,12 @@ const Distance5min = () => {
                     <div className="info">
                         <img src="#" alt="숙소 이미지" />
                         <div className="text">
-                            <strong>업체명</strong>
+                            <strong>{Data.region[0].detail[0].items[0].name}</strong>
                             <span className="locate">상세 위치 보기</span>
-                            <span className="price"><em>???,000</em> 원 ~</span>
+                            <span className="price"><em>{Data.region[0].detail[0].items[0].price}</em> 원 ~</span>
                         </div>
                     </div>
-                    <button className="move">예약하러 가기</button>
+                    <button className="move" onClick={() => window.open(Data.region[0].detail[0].items[0].url, '_blank')}>최저가 비교하기</button>
                 </Card>
             </ListWrap>
         </DistanceLayout>
