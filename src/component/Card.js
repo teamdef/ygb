@@ -1,25 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { HiLocationMarker } from "react-icons/hi";
+import MapView from "../pages/MapView";
 
-// const price = () => {} 단위 반점 구현 예정
-const Card = (props) => {
+const Card = ({ folder, item }) => {
+  const [showMap, setShowMap] = useState(false);
+  const isShow = () => {
+    setShowMap(true);
+  };
+  // 정수형 -> 문자열 변환 후 문자 사이 : 추가 ex) 10:10
+  const time = (_num) => {
+    if(_num != null){
+      let time = String(_num).replace(/(.{2})/,"$1:")
+      return time;
+    } else {
+      return '없음';
+    }
+  };
   return (
     <CardEl>
       <div className="info">
-        <img src="#" alt="숙소 이미지" />
+        <img
+          src={`assets/img/main/064/${folder}/${item.image[0]}`}
+          alt="thumbnail"
+        />
         <div className="text">
-          <strong>{props.item.name}</strong>
-          <span className="locate">상세 위치 보기</span>
+          <strong>{item.name}</strong>
+          <span className="locate" onClick={isShow}>
+            <HiLocationMarker />
+            상세 위치 보기
+          </span>
+          {showMap ? (
+            <MapView
+              setShowMap={setShowMap}
+              lat={item.lat}
+              lng={item.lng}
+            />
+          ) : null}
           <span className="price">
-            <em>{props.item.price}</em> 원 ~
+            <em style={{ fontStyle: "normal" }}>
+              {item.price.toLocaleString("ko-KR")}
+            </em>{" "}
+            원 ~
           </span>
         </div>
       </div>
+      <div className="check">
+        <span>입실 시간 {time(item.checkin)}</span>
+        <span>퇴실 시간 {time(item.checkout)}</span>
+      </div>
       <button
         className="move"
-        onClick={() =>
-          window.open(props.item.url, "_blank")
-        }
+        onClick={() => window.open(item.url, "_blank")}
       >
         최저가 비교하기
       </button>
@@ -35,7 +67,7 @@ const CardEl = styled.div`
   .info {
     display: flex;
     margin-bottom: 10%;
-    img {
+    > img {
       margin-right: 10%;
       width: 130px;
       border-radius: 5px;
@@ -51,10 +83,19 @@ const CardEl = styled.div`
         display: block;
       }
       .locate {
+        position: relative;
         display: block;
+        padding-left: 30px;
         margin-bottom: 10%;
         font-size: 0.8rem;
         color: #ccc;
+        svg {
+          position: absolute;
+          left: 0;
+          top: -8px;
+          width: 2em;
+          height: 2em;
+        }
       }
       .price {
         display: block;
@@ -62,6 +103,12 @@ const CardEl = styled.div`
         text-align: right;
       }
     }
+  }
+  .check {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
   }
   .move {
     width: 100%;

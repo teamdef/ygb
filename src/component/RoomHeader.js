@@ -1,17 +1,23 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from "styled-components";
 
 const RoomHeader = (props) => {
-    
-    console.log("type :" + props.type);
+    const isActive = (_num) => {
+        if(_num == props.type){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     return (
         <RoomHeaderLayout>
             <nav>
-                <button onClick={() => {props.setType(0)}}>전체</button>
-                <button onClick={() => {props.setType(1)}}>게하</button>
-                <button onClick={() => {props.setType(2)}}>펜션</button>
-                <button onClick={() => {props.setType(3)}}>호텔</button>
-                <button onClick={() => {props.setType(4)}}>독채</button>
+                <button  className={(isActive(0) ? 'active' : 'inactive')} onClick={() => {props.setType(0)}}>전체</button>
+                <button  className={(isActive(1) ? 'active' : 'inactive')} onClick={() => {props.setType(1)}}>게하</button>
+                <button  className={(isActive(2) ? 'active' : 'inactive')} onClick={() => {props.setType(2)}}>펜션</button>
+                <button  className={(isActive(3) ? 'active' : 'inactive')} onClick={() => {props.setType(3)}}>호텔</button>
+                <button  className={(isActive(4) ? 'active' : 'inactive')} onClick={() => {props.setType(4)}}>독채</button>
             </nav>
         </RoomHeaderLayout>
     )

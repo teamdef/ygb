@@ -5,14 +5,19 @@ import Data from "../data.json";
 
 const PointTemplate = (props) => {
   const detail = Data.region[props.id - 1].detail;
-  const pointList = detail.map((detail,index) => (
-    <Link to={`/${Data.region[props.id - 1].name}/${detail.id}`} className="card" key={detail.id} state={{regionId : props.id - 1,pointId : index}}>
+  const pointList = detail.map((detail, index) => (
+    <Link
+      to={`/${Data.region[props.id - 1].name}/${detail.id}`}
+      className="card"
+      key={detail.id}
+      state={{ regionId: props.id - 1, pointId: index, detailId: detail.id }}
+    >
       <img src={detail.image} alt="여행지이미지" />
       <span className="card-title">{detail.name}</span>
     </Link>
   ));
-  
-  return (<TemplateEl className="Template">{pointList}</TemplateEl>);
+
+  return <TemplateEl className="Template">{pointList}</TemplateEl>;
 };
 
 // styled-components

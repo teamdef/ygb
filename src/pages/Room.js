@@ -12,7 +12,7 @@ const Room = () => {
     return (
         <Contents>
             <RoomHeader type={type} setType={setType} />
-            <RoomList pointId={location.state.pointId}  regionId={location.state.regionId} type={type}/>
+            <RoomList pointId={location.state.pointId}  regionId={location.state.regionId} detailId={location.state.detailId} type={type}/>
         </Contents>
     )
 }
