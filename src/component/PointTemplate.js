@@ -10,7 +10,7 @@ const PointTemplate = (props) => {
       to={`/${Data.region[props.id - 1].name}/${detail.id}`}
       className="card"
       key={detail.id}
-      state={{ regionId: props.id - 1, pointId: index, detailId: detail.id }}
+      state={{ regionId: props.id - 1, pointId: index}}
     >
       <img src={detail.image} alt="여행지이미지" />
       <span className="card-title">{detail.name}</span>

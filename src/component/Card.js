@@ -3,25 +3,26 @@ import styled from "styled-components";
 import { HiLocationMarker } from "react-icons/hi";
 import MapView from "../pages/MapView";
 
-const Card = ({ folder, item }) => {
+const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
   const isShow = () => {
     setShowMap(true);
   };
   // 정수형 -> 문자열 변환 후 문자 사이 : 추가 ex) 10:10
   const time = (_num) => {
-    if(_num != null){
-      let time = String(_num).replace(/(.{2})/,"$1:")
+    if (_num != null) {
+      let time = String(_num).replace(/(.{2})/, "$1:");
       return time;
     } else {
-      return '없음';
+      return "없음";
     }
   };
+
   return (
     <CardEl>
       <div className="info">
         <img
-          src={`assets/img/main/064/${folder}/${item.image[0]}`}
+          src={item.image[0]}
           alt="thumbnail"
         />
         <div className="text">
@@ -31,11 +32,7 @@ const Card = ({ folder, item }) => {
             상세 위치 보기
           </span>
           {showMap ? (
-            <MapView
-              setShowMap={setShowMap}
-              lat={item.lat}
-              lng={item.lng}
-            />
+            <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
           ) : null}
           <span className="price">
             <em style={{ fontStyle: "normal" }}>
@@ -49,10 +46,7 @@ const Card = ({ folder, item }) => {
         <span>입실 시간 {time(item.checkin)}</span>
         <span>퇴실 시간 {time(item.checkout)}</span>
       </div>
-      <button
-        className="move"
-        onClick={() => window.open(item.url, "_blank")}
-      >
+      <button className="move" onClick={() => window.open(item.url, "_blank")}>
         최저가 비교하기
       </button>
     </CardEl>
@@ -68,11 +62,12 @@ const CardEl = styled.div`
     display: flex;
     margin-bottom: 10%;
     > img {
+      position: relative;
       margin-right: 10%;
+      object-fit: cover;
       width: 130px;
-      border-radius: 5px;
-      background-color: #ccc;
       height: 130px;
+      border-radius: 5px;
     }
     .text {
       flex-grow: 1;
