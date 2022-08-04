@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { HiLocationMarker } from "react-icons/hi";
+import { BiImages } from "react-icons/bi";
+
 import MapView from "../pages/MapView";
+import PhotoView from "./PhotoView";
 
 const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
-  const isShow = () => {
+  const [showImg, setShowImg] = useState(false);
+  const isShowMap = () => {
     setShowMap(true);
+  };
+  const isShowImg = () => {
+    setShowImg(true);
   };
   // 정수형 -> 문자열 변환 후 문자 사이 : 추가 ex) 10:10
   const time = (_num) => {
@@ -21,18 +28,21 @@ const Card = ({ item }) => {
   return (
     <CardEl>
       <div className="info">
-        <img
-          src={item.image[0]}
-          alt="thumbnail"
-        />
+        <div className="img-area"onClick={isShowImg}>
+          <img src={item.image[0]} alt="thumbnail" />
+          <BiImages size="30" color="#ccc"/>
+        </div>
         <div className="text">
           <strong>{item.name}</strong>
-          <span className="locate" onClick={isShow}>
+          <span className="locate" onClick={isShowMap}>
             <HiLocationMarker />
             상세 위치 보기
           </span>
           {showMap ? (
             <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
+          ) : null}
+          {showImg ? (
+            <PhotoView setShowImg={setShowImg} item={item}/>
           ) : null}
           <span className="price">
             <em style={{ fontStyle: "normal" }}>
@@ -61,13 +71,35 @@ const CardEl = styled.div`
   .info {
     display: flex;
     margin-bottom: 10%;
-    > img {
+    .img-area {
+      flex-shrink: 0;
       position: relative;
       margin-right: 10%;
-      object-fit: cover;
       width: 130px;
       height: 130px;
       border-radius: 5px;
+      overflow:hidden;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      > svg {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        padding: 3px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.5);
+        &::before {
+          content:''
+          position:absolute;
+          display:block;
+          width: 24px;
+          height: 24px;
+        }
+      }
     }
     .text {
       flex-grow: 1;

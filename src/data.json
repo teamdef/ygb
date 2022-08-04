@@ -8,7 +8,7 @@
             "detail":[
                 {
                     "id" : 220641,
-                    "name" : "성산일출봉",
+                    "name" : "성산 일출봉",
                     "image" : "assets/img/main/064/064_1.png",
                     "items" : [{
                         "id": 220641001,
@@ -809,28 +809,37 @@
                 },
                 {
                     "id" : 220642,
-                    "name" : "섭지코지",
+                    "name" : "신양섭지 섭지코지",
                     "image" : "assets/img/main/064/064_2.png"
-                },
-                {
+                },{
                     "id" : 220643,
-                    "name" : "곽지해수욕장",
+                    "name" : "중문 관광단지",
                     "image" : "assets/img/main/064/064_3.png"
                 },
                 {
                     "id" : 220644,
-                    "name" : "한담해변",
+                    "name" : "이중섭거리 올레시장",
                     "image" : "assets/img/main/064/064_4.png"
                 },
                 {
                     "id" : 220645,
-                    "name" : "협재해수욕장",
+                    "name" : "곽지해수욕장",
                     "image" : "assets/img/main/064/064_5.png"
                 },
                 {
                     "id" : 220646,
-                    "name" : "금능해수욕장",
+                    "name" : "한담해변",
                     "image" : "assets/img/main/064/064_6.png"
+                },
+                {
+                    "id" : 220647,
+                    "name" : "협재해수욕장",
+                    "image" : "assets/img/main/064/064_7.png"
+                },
+                {
+                    "id" : 220648,
+                    "name" : "금능해수욕장",
+                    "image" : "assets/img/main/064/064_8.png"
                 }
             ]
         },{

@@ -24,16 +24,16 @@ const PointTemplate = (props) => {
 const TemplateEl = styled.div`
   position: relative;
   display: grid;
-  height: 70%;
+  height: 90%;
   background-color: #fff;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   & .card {
     position: relative;
-    width: 80%;
-    height: 80%;
+    width:150px;
+    height:150px;
     border-radius: 20px;
     box-shadow: 2px 4px 4px 2px #999;
     background-color: #a6dbe1;
@@ -50,10 +50,11 @@ const TemplateEl = styled.div`
       transform: translate(-50%, -50%);
       display: block;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       text-shadow: 1px 1px 3px #000;
-      white-space: nowrap;
+      word-break: keep-all;
+      text-align: center;
     }
     &::before {
       content: "";
