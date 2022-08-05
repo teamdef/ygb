@@ -28,7 +28,7 @@ const RoomHeaderLayout = styled.div`
     position:relative;
     width:100%;
     height: 80px;
-    background-color:#A6DBE1;
+    background-color:#00baca;
     nav {
         position:absolute;
         bottom: 0;

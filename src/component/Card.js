@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { HiLocationMarker } from "react-icons/hi";
-import { BiImages } from "react-icons/bi";
+import { BiImages, BiWalk } from "react-icons/bi";
 
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
@@ -27,13 +27,25 @@ const Card = ({ item }) => {
 
   return (
     <CardEl>
+      <span id="time">
+        도보
+        <em style={{ fontStyle: "normal", color: "red" }}> {item.time} </em>
+        분 내 위치
+        <BiWalk size="25" color="#000" />
+      </span>
       <div className="info">
-        <div className="img-area"onClick={isShowImg}>
-          <img src={item.image[0]} alt="thumbnail" />
-          <BiImages size="30" color="#ccc"/>
+        <div className="info-left">
+          <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
+          <BiImages size="30" color="#ccc" onClick={isShowImg} />
+          <div className="check-time">
+            <span className="tag">입실</span><span>{time(item.checkin)}</span>
+          </div>
+          <div className="check-time">
+            <span className="tag">퇴실</span><span>{time(item.checkout)}</span>
+          </div>
         </div>
-        <div className="text">
-          <strong>{item.name}</strong>
+        <div className="info-right">
+          <strong id="name">{item.name}</strong>
           <span className="locate" onClick={isShowMap}>
             <HiLocationMarker />
             상세 위치 보기
@@ -41,21 +53,17 @@ const Card = ({ item }) => {
           {showMap ? (
             <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
           ) : null}
-          {showImg ? (
-            <PhotoView setShowImg={setShowImg} item={item}/>
-          ) : null}
+          {showImg ? <PhotoView setShowImg={setShowImg} item={item} /> : null}
           <span className="price">
+            <span className="tag" style={{fontSize:"1rem",marginRight:"10px"}}>최저가</span>
             <em style={{ fontStyle: "normal" }}>
               {item.price.toLocaleString("ko-KR")}
             </em>{" "}
-            원 ~
+            원~
           </span>
         </div>
       </div>
-      <div className="check">
-        <span>입실 시간 {time(item.checkin)}</span>
-        <span>퇴실 시간 {time(item.checkout)}</span>
-      </div>
+
       <button className="move" onClick={() => window.open(item.url, "_blank")}>
         최저가 비교하기
       </button>
@@ -66,28 +74,47 @@ const Card = ({ item }) => {
 // styled-components
 const CardEl = styled.div`
   position: relative;
+  font-weight: bold;
   padding: 10% 0;
   border-bottom: 1px solid #999;
+  .tag {
+    background-color: #eee;
+    color: #777;
+    padding: 2px 7px;
+    border-radius: 5px;
+  }
+  #time {
+    position:relative;
+    display:inline-block;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    svg {
+      position:absolute;
+      display:block;
+      top:45%;
+      left: 0px;
+      transform:translateY(-50%);
+    }
+  }
   .info {
     display: flex;
-    margin-bottom: 10%;
-    .img-area {
+    margin-bottom: 5%;
+    .info-left {
       flex-shrink: 0;
       position: relative;
       margin-right: 10%;
-      width: 130px;
-      height: 130px;
-      border-radius: 5px;
-      overflow:hidden;
       > img {
-        width: 100%;
-        height: 100%;
+        border-radius: 5px;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 10%;
         object-fit: cover;
       }
       > svg {
         position: absolute;
         display: block;
-        bottom: 0;
+        top: 100px;
         right: 0;
         padding: 3px;
         border-radius: 5px;
@@ -100,11 +127,22 @@ const CardEl = styled.div`
           height: 24px;
         }
       }
+      .check-time {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #777;
+        align-items: center;
+        margin-bottom: 5px;
+        
+      }
     }
-    .text {
+    .info-right {
       flex-grow: 1;
       font-weight: bold;
-      strong {
+      #name {
         margin-bottom: 20%;
         font-size: 1.5rem;
         display: block;
@@ -113,7 +151,7 @@ const CardEl = styled.div`
         position: relative;
         display: block;
         padding-left: 30px;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         font-size: 0.8rem;
         color: #ccc;
         svg {
@@ -127,22 +165,17 @@ const CardEl = styled.div`
       .price {
         display: block;
         font-size: 1.3rem;
-        text-align: right;
+        white-space: nowrap;
       }
     }
   }
-  .check {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-  }
+  
   .move {
     width: 100%;
     height: 50px;
     border: 0;
     border-radius: 5px;
-    background-color: #a6dbe1;
+    background-color: #00baca;
     color: #fff;
     font-weight: bold;
     font-size: 1.5rem;

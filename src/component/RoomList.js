@@ -8,6 +8,8 @@ const RoomList = (props) => {
     console.log(props);
     console.log(items.filter(item => item.type === props.type));
 
+    items = items.sort(function(a,b) {	return parseFloat(a.time) - parseFloat(b.time);});
+
     const itemList = items.map((item,index) => (
         <Card item={item} key={index} folder={props.detailId}/>
     )) 
