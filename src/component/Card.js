@@ -6,7 +6,7 @@ import { BiImages, BiWalk } from "react-icons/bi";
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
 
-const Card = ({ item }) => {
+const Card = ({ item,count_5m, count_10m, count_15m }) => {
   const [showMap, setShowMap] = useState(false);
   const [showImg, setShowImg] = useState(false);
   const isShowMap = () => {
@@ -24,24 +24,32 @@ const Card = ({ item }) => {
       return "없음";
     }
   };
-
+  const price = (_price) => {
+    if(_price == null) return "가격 정보 없음"
+    else return `${_price.toLocaleString("ko-KR")} 원 ~`
+  } 
   return (
     <CardEl>
-      <span id="time">
+      {/* <span id="time">
         도보
         <em style={{ fontStyle: "normal", color: "red" }}> {item.time} </em>
         분 내 위치
         <BiWalk size="25" color="#000" />
-      </span>
+      </span> */}
+      {count_5m ? <h1>도보 <span>5</span> 분 내 위치</h1> : ''}
+      {count_10m ? <h1>도보 <span>10</span> 분 내 위치</h1> : ''}
+      {count_15m ? <h1>도보 <span>15</span> 분 내 위치</h1> : ''}
       <div className="info">
         <div className="info-left">
           <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
           <BiImages size="30" color="#ccc" onClick={isShowImg} />
           <div className="check-time">
-            <span className="tag">입실</span><span>{time(item.checkin)}</span>
+            <span className="tag">입실</span>
+            <span>{time(item.checkin)}</span>
           </div>
           <div className="check-time">
-            <span className="tag">퇴실</span><span>{time(item.checkout)}</span>
+            <span className="tag">퇴실</span>
+            <span>{time(item.checkout)}</span>
           </div>
         </div>
         <div className="info-right">
@@ -55,11 +63,15 @@ const Card = ({ item }) => {
           ) : null}
           {showImg ? <PhotoView setShowImg={setShowImg} item={item} /> : null}
           <span className="price">
-            <span className="tag" style={{fontSize:"1rem",marginRight:"10px"}}>최저가</span>
+            <span
+              className="tag"
+              style={{ fontSize: "1rem", marginRight: "10px" }}
+            >
+              최저가
+            </span>
             <em style={{ fontStyle: "normal" }}>
-              {item.price.toLocaleString("ko-KR")}
+              {price(item.price)}
             </em>{" "}
-            원~
           </span>
         </div>
       </div>
@@ -75,8 +87,21 @@ const Card = ({ item }) => {
 const CardEl = styled.div`
   position: relative;
   font-weight: bold;
-  padding: 10% 0;
-  border-bottom: 1px solid #999;
+  padding-bottom: 10%;
+  h1 {
+    position:relative;
+    padding: 10% 20px;
+    padding-bottom: 0;
+    text-align: center;
+    border-top: 2px solid #eee;
+    font-size: 1.5rem;
+    color: #000;
+    span {
+      font-size: 2rem;
+      color: #00baca;
+      font-weight: bold;
+    }
+  }
   .tag {
     background-color: #eee;
     color: #777;
@@ -99,6 +124,7 @@ const CardEl = styled.div`
   }
   .info {
     display: flex;
+    padding-top: 10%;
     margin-bottom: 5%;
     .info-left {
       flex-shrink: 0;
