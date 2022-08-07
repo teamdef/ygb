@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Data from "../data.json";
 
 const PointTemplate = (props) => {
@@ -11,6 +11,11 @@ const PointTemplate = (props) => {
       className="card"
       key={detail.id}
       state={{ regionId: props.id - 1, pointId: index}}
+      onClick={()=> {
+        window.scrollTo({
+          top: 0,
+        });
+      }}
     >
       <img src={detail.image} alt="여행지이미지" />
       <span className="card-title">{detail.name}</span>
@@ -22,67 +27,70 @@ const PointTemplate = (props) => {
 
 // styled-components
 const TemplateEl = styled.div`
-  position: relative;
-  display: grid;
-  height: 90%;
-  background-color: #fff;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: repeat(4, 1fr);
-  & .card {
-    position: relative;
+position: relative;
+display: grid;
+height:90%;
+background-color: #edfeff;
+grid-template-columns:repeat(2,1fr);
+justify-items: center;
+align-items: center;
+grid-template-rows:repeat(4,1fr);
+& .card {
+    position:relative;
     width:150px;
     height:150px;
-    border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 2px 4px 4px 2px #999;
-    background-color: #a6dbe1;
-    overflow: hidden;
-    cursor: pointer;
+    border: 10px solid #00baca;
+    background-color: #000;
+    overflow:hidden;
+    cursor:pointer;
     img {
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        height: 100%;
     }
     & .card-title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: block;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-shadow: 1px 1px 3px #000;
-      word-break: keep-all;
-      text-align: center;
+        position: absolute;
+        top:50%;
+        font-family: 'GangwonEdu_OTFBoldA';
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        word-break: keep-all;
+        text-align: center;
     }
     &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.3);
+        content:'';
+        position:absolute;
+        top: 0;
+        display:block;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.5);
     }
     & .cap {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      cursor: default;
-      & span {
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
+        position:absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,1);
+        cursor:default;
+        & span {
+            position:absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            font-family: 'GangwonEdu_OTFBoldA';
+            transform: translate(-50%,-50%);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     }
-  }
+}
 `;
 
 export default PointTemplate;

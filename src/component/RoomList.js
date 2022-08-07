@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Card from "./Card";
 import Data from "../data.json";
+import {TiWarningOutline} from 'react-icons/ti';
 
 const RoomList = (props) => {
   // 숙박시설정보 배열
@@ -17,15 +18,7 @@ const RoomList = (props) => {
   const count_5m = items.findIndex((item) => item.time <= 5);
   const count_10m = items.findIndex((item) => item.time >= 10);
   const count_15m = items.findIndex((item) => item.time >= 15);
-  const Roomtype = () => {
-    // 리팩토링 예정
-    if (props.type == 0) return <span>근방에 존재하는 <b>"숙소" </b>가 없어요!</span>;
-    else if (props.type == 1) return <span>근방에 존재하는 <b>"게스트하우스" </b>가 없어요!</span>;
-    else if (props.type == 2) return <span>근방에 존재하는 <b>"펜션" </b>가 없어요!</span>;
-    else if (props.type == 3) return <span>근방에 존재하는 <b>"호텔" </b>가 없어요!</span>;
-    else if (props.type == 4) return <span>근방에 존재하는 <b>"독채" </b>가 없어요!</span>;
-  };
-
+  
   const itemList = items.map((item, index) => (
     <Card
       item={item}
@@ -36,13 +29,15 @@ const RoomList = (props) => {
       count_15m={index == count_15m}
     />
   ));
-  console.log(Roomtype());
   return (
     <RoomListLayout>
       {itemList.length != 0 ? (
         itemList
       ) : (
-        <div className="empty">{Roomtype()}</div>
+        <div className="empty">
+          <TiWarningOutline size='100' color="#aaa"/>
+          <span>근방에 존재하는 숙소가 없습니다</span>
+          </div>
       )}
     </RoomListLayout>
   );
@@ -57,14 +52,16 @@ const RoomListLayout = styled.div`
   background-color: #fff;
   min-height: 100vh;
   .empty {
-    padding-top: 70%;
+    padding-top: 50%;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
     color: #999;
-    b {
-      color: #00baca;
-      font-size: 1.5rem;
+    svg {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      margin-bottom : 10%;
     }
   }
 `;

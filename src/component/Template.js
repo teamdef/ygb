@@ -27,7 +27,7 @@ const TemplateEl = styled.div`
     position: relative;
     display: grid;
     height:70%;
-    background-color: #fff;
+    background-color: #edfeff;
     grid-template-columns:repeat(2,1fr);
     justify-items: center;
     align-items: center;
@@ -36,8 +36,9 @@ const TemplateEl = styled.div`
         position:relative;
         width:150px;
         height:150px;
-        border-radius: 20px;
+        border-radius: 50%;
         box-shadow: 2px 4px 4px 2px #999;
+        border: 10px solid #00baca;
         background-color: #000;
         overflow:hidden;
         cursor:pointer;
@@ -47,13 +48,13 @@ const TemplateEl = styled.div`
         }
         & .card-title {
             position: absolute;
-            text-shadow: 1px 1px 3px #000;
             top:50%;
+            font-family: 'GangwonEdu_OTFBoldA';
             left:50%;
             transform: translate(-50%,-50%);
             display: block;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: bold;
             white-space: nowrap;
         }
@@ -64,23 +65,24 @@ const TemplateEl = styled.div`
             display:block;
             width:100%;
             height:100%;
-            background-color:rgba(255,255,255,.3);
+            background-color:rgba(0,0,0,0.5);
         }
         & .cap {
             position:absolute;
             top: 0;
             width: 100%;
             height: 100%;
-            background-color:rgba(0,0,0,.7);
+            background-color:rgba(0,0,0,1);
             cursor:default;
             & span {
                 position:absolute;
                 text-align: center;
                 top: 50%;
                 left: 50%;
+                font-family: 'GangwonEdu_OTFBoldA';
                 transform: translate(-50%,-50%);
                 color: #fff;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 font-weight: bold;
             }
         }
