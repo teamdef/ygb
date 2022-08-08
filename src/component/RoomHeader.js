@@ -125,7 +125,6 @@ const RoomHeaderLayout = styled.div`
   width: 100%;
   max-width: 390px;
   text-align: center;
-  box-shadow: 0px 0px 5px 0px #999;
   &.down .gotop {
     opacity: 1;
   }
@@ -172,8 +171,11 @@ const RoomHeaderLayout = styled.div`
     bottom: 0;
     display: block;
     width: 100%;
+    
+    margin-bottom: -1px;
     justify-content: space-around;
     display: flex;
+    
     button {
       flex-grow: 1;
       font-size: 1.3rem;
@@ -182,8 +184,9 @@ const RoomHeaderLayout = styled.div`
       border: 0;
       background-color: transparent;
       color: #fff;
+      font-family: 'GangwonEdu_OTFBoldA';
       &.active {
-        color: #000;
+        color: #00baca;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-color: #fff;

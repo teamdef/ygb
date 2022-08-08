@@ -29,7 +29,7 @@ const PointTemplate = (props) => {
 const TemplateEl = styled.div`
 position: relative;
 display: grid;
-height:90%;
+height:95%;
 background-color: #edfeff;
 grid-template-columns:repeat(2,1fr);
 justify-items: center;
@@ -52,7 +52,6 @@ grid-template-rows:repeat(4,1fr);
     & .card-title {
         position: absolute;
         top:50%;
-        font-family: 'GangwonEdu_OTFBoldA';
         left:50%;
         transform: translate(-50%,-50%);
         display: block;

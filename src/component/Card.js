@@ -205,6 +205,7 @@ const CardEl = styled.div`
     color: #fff;
     font-weight: bold;
     font-size: 1.5rem;
+    font-family: 'GangwonEdu_OTFBoldA';
   }
 `;
 

@@ -48,7 +48,7 @@ const RoomListLayout = styled.div`
   position: relative;
   display: block;
   padding: 5%;
-  padding-top: 145px;
+  padding-top: 143px;
   background-color: #fff;
   min-height: 100vh;
   .empty {
