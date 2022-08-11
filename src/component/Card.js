@@ -6,7 +6,7 @@ import { BiImages, BiWalk } from "react-icons/bi";
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
 
-const Card = ({ item,count_5m, count_10m, count_15m }) => {
+const Card = ({ item, count_5m, count_10m, count_15m }) => {
   const [showMap, setShowMap] = useState(false);
   const [showImg, setShowImg] = useState(false);
   const isShowMap = () => {
@@ -25,9 +25,9 @@ const Card = ({ item,count_5m, count_10m, count_15m }) => {
     }
   };
   const price = (_price) => {
-    if(_price == null) return "가격 정보 없음"
-    else return `${_price.toLocaleString("ko-KR")} 원 ~`
-  } 
+    if (_price == null) return "가격 정보 없음";
+    else return `${_price.toLocaleString("ko-KR")} 원 ~`;
+  };
   return (
     <CardEl>
       {/* <span id="time">
@@ -36,19 +36,37 @@ const Card = ({ item,count_5m, count_10m, count_15m }) => {
         분 내 위치
         <BiWalk size="25" color="#000" />
       </span> */}
-      {count_5m ? <h1>도보 <span>5</span> 분 내 위치</h1> : ''}
-      {count_10m ? <h1>도보 <span>10</span> 분 내 위치</h1> : ''}
-      {count_15m ? <h1>도보 <span>15</span> 분 내 위치</h1> : ''}
+      {count_5m ? (
+        <h1>
+          도보 <span>5</span> 분 내 위치
+        </h1>
+      ) : (
+        ""
+      )}
+      {count_10m ? (
+        <h1>
+          도보 <span>10</span> 분 내 위치
+        </h1>
+      ) : (
+        ""
+      )}
+      {count_15m ? (
+        <h1>
+          도보 <span>15</span> 분 내 위치
+        </h1>
+      ) : (
+        ""
+      )}
       <div className="info">
         <div className="info-left">
           <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
           <BiImages size="30" color="#ccc" onClick={isShowImg} />
           <div className="check-time">
-            <span className="tag">입실</span>
+            <span className="tag">체크인</span>
             <span>{time(item.checkin)}</span>
           </div>
           <div className="check-time">
-            <span className="tag">퇴실</span>
+            <span className="tag">체크아웃</span>
             <span>{time(item.checkout)}</span>
           </div>
         </div>
@@ -57,6 +75,7 @@ const Card = ({ item,count_5m, count_10m, count_15m }) => {
           <span className="locate" onClick={isShowMap}>
             <HiLocationMarker />
             상세 위치 보기
+            {/* 도보 {item.time} 분 도착 */}
           </span>
           {showMap ? (
             <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
@@ -65,20 +84,19 @@ const Card = ({ item,count_5m, count_10m, count_15m }) => {
           <span className="price">
             <span
               className="tag"
-              style={{ fontSize: "1rem", marginRight: "10px" }}
             >
               최저가
             </span>
-            <em style={{ fontStyle: "normal" }}>
-              {price(item.price)}
-            </em>{" "}
+            <em style={{ fontStyle: "normal" }}>{price(item.price)}</em>{" "}
           </span>
+          <button
+            className="move"
+            onClick={() => window.open(item.url, "_blank")}
+          >
+            실시간 가격 보기
+          </button>
         </div>
       </div>
-
-      <button className="move" onClick={() => window.open(item.url, "_blank")}>
-        최저가 비교하기
-      </button>
     </CardEl>
   );
 };
@@ -106,6 +124,7 @@ const CardEl = styled.div`
     background-color: #eee;
     color: #777;
     padding: 2px 7px;
+    font-size: 1rem;
     border-radius: 5px;
   }
   #time {
@@ -134,7 +153,7 @@ const CardEl = styled.div`
         border-radius: 5px;
         width: 130px;
         height: 130px;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         object-fit: cover;
       }
       > svg {
@@ -156,30 +175,35 @@ const CardEl = styled.div`
       .check-time {
         position: relative;
         display: flex;
-        justify-content: space-around;
-        font-size: 1rem;
+        justify-content: space-between;
         font-weight: bold;
         color: #777;
         align-items: center;
-        margin-bottom: 5px;
-        
+        margin-bottom: 10px;
       }
     }
     .info-right {
       flex-grow: 1;
       font-weight: bold;
       #name {
-        margin-bottom: 20%;
-        font-size: 1.5rem;
-        display: block;
+        font-size: 1.7rem;
+        height: 60px;
+        overflow: hidden;
+        margin-bottom: 10%;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
       }
       .locate {
         position: relative;
         display: block;
         padding-left: 30px;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
         font-size: 0.8rem;
-        color: #ccc;
+        font-family: auto;
+        font-weight: 600;
+        color: #007aff;
         svg {
           position: absolute;
           left: 0;
@@ -189,24 +213,29 @@ const CardEl = styled.div`
         }
       }
       .price {
-        display: block;
-        font-size: 1.3rem;
+        position: relative;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        align-items: center;
         white-space: nowrap;
+      }
+      .move {
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #00baca;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: 'GangwonEdu_OTFBoldA';
       }
     }
   }
   
-  .move {
-    width: 100%;
-    height: 50px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #00baca;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'GangwonEdu_OTFBoldA';
-  }
+  
 `;
 
 export default Card;

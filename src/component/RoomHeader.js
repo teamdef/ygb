@@ -46,7 +46,7 @@ const RoomHeader = (props) => {
   return (
     <RoomHeaderLayout className={down ? "down" : ""}>
       <Link to="/" className="logo">
-        요근방
+        요근방 <span>Beta</span>
       </Link>
       <nav>
         <button
@@ -107,7 +107,7 @@ const RoomHeader = (props) => {
             setScrollY(0);
           }}
         >
-          독채
+          모텔
         </button>
       </nav>
       <button className="gotop"
@@ -163,6 +163,11 @@ const RoomHeaderLayout = styled.div`
   }
   .logo {
     margin: 30px 0;
+    span {
+      margin-left: 10px;
+      position: absolute;
+      font-size: 1.3rem;
+    }
   }
   background-color: #00baca;
 

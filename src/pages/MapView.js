@@ -3,12 +3,12 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import {GrClose} from "react-icons/gr"
 
-const { kakao } = window;
 
 const Map = ({ lat, lng, setShowMap }) => {
+  const { kakao } = window;
+  console.log(kakao);
   useEffect(() => {
     let container = document.getElementById("map");
-
     let options = {
       center: new window.kakao.maps.LatLng(lat, lng),
       level: 5,
