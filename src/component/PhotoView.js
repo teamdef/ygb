@@ -37,7 +37,7 @@ const PhotoView = ({ setShowImg, item }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      <GrClose onClick={() => {setShowImg(false)}}/>
+      <button className="close-btn"><GrClose size="24" onClick={() => {setShowImg(false)}}/></button>
       </div>
     </PhotoViewEl>
   );
@@ -81,14 +81,12 @@ const PhotoViewEl = styled.div`
       }
     }
   }
-  svg {
+  .close-btn {
     position: absolute;
     z-index: 1;      
     bottom: -20%;
     right: 50%;
     transform:translateX(50%);
-    height: 1.5rem;
-    width: 1.5rem;
     path {
       stroke: white;
     }

@@ -4,11 +4,13 @@
         "name": "제주도",
         "open": true,
         "image": "/ygb/assets/img/main/main_1.png",
-        "detail": [{
+        "detail": [
+            {
                 "id": 220641,
                 "name": "성산 일출봉",
                 "image": "/ygb/assets/img/main/064/064_1.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220641001,
                         "name": "히든스테이",
                         "time": 5,

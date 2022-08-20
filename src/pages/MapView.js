@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import {GrClose} from "react-icons/gr"
 
+const { kakao } = window;
 
 const Map = ({ lat, lng, setShowMap }) => {
-  const { kakao } = window;
   console.log(kakao);
   useEffect(() => {
     let container = document.getElementById("map");
@@ -34,7 +34,7 @@ const Map = ({ lat, lng, setShowMap }) => {
       <div id="bg" onClick={() => {setShowMap(false)}}></div>
       <div className="map-area">
         <div id="map"></div>
-        <GrClose onClick={() => {setShowMap(false)}}/>
+        <button className="close-btn"><GrClose size="24" onClick={() => {setShowMap(false)}}/></button>
       </div>
     </MapViewEl>
   );
@@ -58,14 +58,16 @@ const MapViewEl = styled.div`
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    svg {
+    .close-btn {
       position: absolute;
       z-index: 1;      
       bottom: -30%;
       right: 50%;
       transform:translateX(50%);
-      height: 1.5rem;
-      width: 1.5rem;
+      border: none;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
       path {
         stroke: white;
       }

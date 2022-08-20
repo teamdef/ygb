@@ -2,94 +2,252 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
-
-const PointTemplate = (props) => {
-  const detail = Data.region[props.id - 1].detail;
-  const pointList = detail.map((detail, index) => (
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { changeDetail } from "../reducers/detailReducer";
+const Template = () => {
+  const dispatch = useDispatch();
+  const { value } = useSelector((state) => state.value);
+  const { detail } = useSelector((state) => state.detail);
+  const detailList = Data.region[value].detail.map((detail, index) => (
     <Link
-      to={`/${Data.region[props.id - 1].name}/${detail.id}`}
+      to={`${detail.id}`}
       className="card"
       key={detail.id}
-      state={{ regionId: props.id - 1, pointId: index}}
-      onClick={()=> {
+      onClick={() => {
         window.scrollTo({
           top: 0,
         });
+        dispatch(changeDetail(Data.region[value].detail[index]));
       }}
     >
       <img src={detail.image} alt="여행지이미지" />
-      <span className="card-title">{detail.name}</span>
+      <div className="card-txt">
+        <h2 className="card-title">{detail.name}</h2>
+        <p className="card-desc">
+          유네스코 세계 자연 유산에 등재된, 제주 최고의 일출명소
+        </p>
+      </div>
     </Link>
   ));
-
-  return <TemplateEl className="Template">{pointList}</TemplateEl>;
+  console.log(value);
+  console.log(detail);
+  return (
+    <TemplateEl className="Template">
+      <div className="detail">
+        <div className="detail-name">
+          <div className="container">
+            <div>
+              <img src={Data.region[value].image} alt="여행지이미지" />
+              <h1>{Data.region[value].name}</h1>
+            </div>
+          </div>
+        </div>
+        <div className="detail-main">
+          <div className="container">
+            <h2 className="title">인기있는 관광지에요</h2>
+            <div className="card-wrap">
+              {detailList}
+            </div>
+          </div>
+        </div>
+      </div>
+    </TemplateEl>
+  );
 };
 
 // styled-components
 const TemplateEl = styled.div`
-position: relative;
-display: grid;
-height:95%;
-background-color: #edfeff;
-grid-template-columns:repeat(2,1fr);
-justify-items: center;
-align-items: center;
-grid-template-rows:repeat(4,1fr);
-& .card {
+  padding-bottom: 100px;
+  // 애니메이션
+  @keyframes UP {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  // main (1페이지)
+  @media screen and (max-width: 1024px) {
+    .main {
+      .card-wrap {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-row-gap: 50px;
+      }
+      .card-title {
+        height: 56px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main {
+      .card-wrap {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .main {
+      padding: 0 4% !important;
+      .card-wrap {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+  }
+  .title {
     position:relative;
-    width:150px;
-    height:150px;
-    border-radius: 50%;
-    box-shadow: 2px 4px 4px 2px #999;
-    border: 10px solid #00baca;
-    background-color: #000;
-    overflow:hidden;
-    cursor:pointer;
-    img {
-        width: 100%;
-        height: 100%;
+    margin-top: 6.25%;
+    font-size: 2.8rem;
+    margin-bottom: 2.5%;
+  }
+  .main {
+    padding: 0 12.5%;
+    .card-wrap {
+      padding-bottom: 100px;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 2%;
+      grid-row-gap: 40px;
     }
-    & .card-title {
+    
+
+    .card {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: UP 1s;
+      img {
+        position: relative;
+        width: 100%;
+      }
+      .card-title {
         position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        display: block;
-        color: #fff;
-        font-size: 1.5rem;
-        font-weight: bold;
-        word-break: keep-all;
-        text-align: center;
-    }
-    &::before {
-        content:'';
-        position:absolute;
-        top: 0;
-        display:block;
-        width:100%;
-        height:100%;
-        background-color:rgba(0,0,0,0.5);
-    }
-    & .cap {
-        position:absolute;
-        top: 0;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
-        height: 100%;
-        background-color:rgba(0,0,0,1);
-        cursor:default;
-        & span {
-            position:absolute;
-            text-align: center;
-            top: 50%;
-            left: 50%;
-            font-family: 'GangwonEdu_OTFBoldA';
-            transform: translate(-50%,-50%);
-            color: #fff;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+        font-size: 2rem;
+        height: 68px;
+        bottom: 0;
+        color: #fff;
+        padding-left: 15%;
+      }
+      svg {
+        margin-left: 10px;
+      }
+      &.not img {
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+      }
     }
+  }
+  // detail (2 페이지)
+  .detail {
+    .detail-name {
+      position:relative;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: 200px;
+      padding: 0 12.5%;
+      .container {
+        height: 100%;
+        >div {
+          position: relative;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+        }
+        h1 {
+          position: absolute;
+          left: 32px;
+          bottom: 32px;
+          display: block;
+          font-size: 3.6rem;
+          color: #fff;
+        }
+      }
+    }
+    .detail-main {
+      padding: 0 12.5%;
+      .card-wrap {
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        .card {
+          border-radius: 5px;
+          overflow: hidden;
+          box-shadow: 5px 10px 25px 0px #ddd;
+          display: flex;
+          height: 144px;
+          img {
+            position:relative;
+            width: 40%;
+            flex: none;
+          }
+          .card-txt {
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            .card-title {
+              position:relative;
+              font-size: 2rem;
+              margin-bottom: 10%;
+            }
+            .card-desc {
+              font-size: 1.6rem;
+              word-break: keep-all;
+              color: #767676;
+              font-family: 'Pretendard-Regular';
+            }
+          }
+        }
+      }
+    }
+  }
+  // detail (1024px)
+  @media screen and (max-width: 1024px) {
+    .detail-name {
+      height:140px !important;
+    }
+    .detail {
+      .detail-main {
+        .card-wrap {
+          grid-template-columns: repeat(2, 1fr);
+          .card {
+            height: 126px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .detail-name {
+      height:120px !important;
+      padding: 0 !important;
+    }
+    .detail {
+      .detail-main {
+        padding: 0 4%;
+        .card-wrap {
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 20px;
+          .card {
+            height: 110px;
+          }
+        }
+      }
+    }
+  }
 }
 `;
 
-export default PointTemplate;
+export default Template;

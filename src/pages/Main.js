@@ -1,23 +1,21 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import Template from "../component/Template"
-import Header from "../component/Header"
+import Template from "../component/Template";
+
 const Main = () => {
-    return (
-        <Contents>
-            <Header />
-            <Template />
-        </Contents>
-    )
-}
+  return (
+    <Contents>
+      <Template/>
+    </Contents>
+  );
+};
 
-// styled-components 
+// styled-components
 const Contents = styled.div`
-    position:relative;
-    display:block;
-    width:100%;
-    height:100%;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 `;
-
 
 export default Main;

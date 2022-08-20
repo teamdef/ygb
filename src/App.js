@@ -1,4 +1,6 @@
 import "./App.css";
+import Header from './component/Header'
+import Footer from './component/Footer'
 import Main from "./pages/Main";
 import Point from "./pages/Point";
 import NotFound from "./pages/NotFound";
@@ -8,16 +10,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Routes>
-            <Route path="/" element={<Main />}></Route>
-            <Route path="/:regionName" element={<Point />}></Route>
-            <Route path="/:regionName/:detailId" element={<Room />}></Route>
-            <Route path="/404" element={<NotFound />}></Route>
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Header />
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="/:regionName" element={<Point />}></Route>
+          <Route path="/:regionName/:detailId" element={<Room />}></Route>
+          <Route path="/404" element={<NotFound />}></Route>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
