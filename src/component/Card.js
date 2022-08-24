@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { HiLocationMarker } from "react-icons/hi";
-import { BiImages } from "react-icons/bi";
+import { RiMapPinLine } from "react-icons/ri";
+import { IoIosArrowForward } from "react-icons/io";
 
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
 
-const Card = ({ item, count_5m, count_10m, count_15m }) => {
+const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
   const [showImg, setShowImg] = useState(false);
   const isShowMap = () => {
@@ -29,81 +29,166 @@ const Card = ({ item, count_5m, count_10m, count_15m }) => {
     else return `${_price.toLocaleString("ko-KR")} 원 ~`;
   };
   return (
-    <CardEl>
-      {/* <span id="time">
+    <>
+      <CardEl>
+        {/* <span id="time">
         도보
         <em style={{ fontStyle: "normal", color: "red" }}> {item.time} </em>
         분 내 위치
         <BiWalk size="25" color="#000" />
       </span> */}
-      {count_5m ? (
-        <h1>
-          도보 <span>5</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      {count_10m ? (
-        <h1>
-          도보 <span>10</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      {count_15m ? (
-        <h1>
-          도보 <span>15</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      <div className="info">
-        <div className="info-left">
+        <div className="card-img">
           <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
-          <BiImages size="30" color="#ccc" onClick={isShowImg} />
-          <div className="check-time">
+        </div>
+        <div className="card-info">
+          <strong className="card-name">{item.name}</strong>
+          <div className="card-check">
             <span className="tag">체크인</span>
-            <span>{time(item.checkin)}</span>
+            <span> : {time(item.checkin)}</span>
+            {" | "}
+            <span className="tag"> 체크아웃</span>
+            <span> : {time(item.checkout)}</span>
           </div>
-          <div className="check-time">
-            <span className="tag">체크아웃</span>
-            <span>{time(item.checkout)}</span>
+          <button className="card-locate" onClick={isShowMap}>
+            <RiMapPinLine color="#205CFF" size="22px" />
+            상세 위치 보기
+          </button>
+          <div className="price">
+            <span className="tag">최저가 </span>
+            <em style={{ fontStyle: "normal" }}>{price(item.price)}</em>{" "}
           </div>
         </div>
+
         <div className="info-right">
-          <strong id="name">{item.name}</strong>
-          <button className="locate" onClick={isShowMap}>
-            <HiLocationMarker />
-            상세 위치 보기
-            {/* 도보 {item.time} 분 도착 */}
-          </button>
           {showMap ? (
             <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
           ) : null}
           {showImg ? <PhotoView setShowImg={setShowImg} item={item} /> : null}
-          <span className="price">
-            <span
-              className="tag"
-            >
-              최저가
-            </span>
-            <em style={{ fontStyle: "normal" }}>{price(item.price)}</em>{" "}
-          </span>
-          <button
-            className="move"
-            onClick={() => window.open(item.url, "_blank")}
-          >
-            실시간 가격 보기
-          </button>
         </div>
-      </div>
-    </CardEl>
+        <button
+          className="move"
+          onClick={() => window.open(item.url, "_blank")}
+        >
+          <span>실시간 가격 보기</span>
+          <IoIosArrowForward size="22px" />
+        </button>
+      </CardEl>
+    </>
   );
 };
 
 // styled-components
 const CardEl = styled.div`
-  
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.08);
+  @media screen and (max-width: 1024px) {
+    .card-img {
+      height: 218px !important;
+    }
+    .card-info {
+      padding: 20px !important;
+      .card-locate {
+        margin: 0 0 0 auto !important;
+        border: none !important;
+      }
+      .card-name {
+        height: 40px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .card-img {
+      height: 200px !important;
+    }
+    .card-info {
+      padding: 15px !important;
+    }
+  }
+  .card-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 236px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-info {
+    position: relative;
+    display: block;
+    padding: 24px;
+    .card-name {
+      position: relative;
+      display: block;
+      margin-bottom: 3%;
+      font-size: 2rem;
+    }
+    .card-check {
+      position: relative;
+      display: block;
+      font-size: 1.6rem;
+      font-family: "Pretendard-Regular";
+      color: #e5e5ec;
+      span {
+        color: #767676;
+      }
+      .tag {
+        color: #000;
+      }
+    }
+    .card-locate {
+      position: relative;
+      display: flex;
+      font-family: "Pretendard-SemiBold";
+      align-items: center;
+      height: 36px;
+      padding: 0 10px;
+      font-size: 1.4rem;
+      margin: 3% 0 3% auto;
+      border: 1px solid #e5e5ec;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #205cff;
+      svg {
+        margin-right: 8px;
+      }
+    }
+    .price {
+      text-align: right;
+      font-size: 1.6rem;
+      font-family: "Pretendard-Regular";
+      em {
+        font-family: "Pretendard-ExtraBold";
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .move {
+    position: relative;
+    display: flex;
+    font-family: "Pretendard-Bold";
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    border: 0;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #00c2d6;
+    svg {
+      margin-left: 5px;
+    }
+  }
 `;
 
 export default Card;
