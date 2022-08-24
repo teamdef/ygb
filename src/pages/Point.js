@@ -26,7 +26,7 @@ const Point = () => {
       <div className="card-txt">
         <h2 className="card-title">{detail.name}</h2>
         <p className="card-desc">
-          유네스코 세계 자연 유산에 등재된, 제주 최고의 일출명소
+          {detail.description}
         </p>
       </div>
     </Link>

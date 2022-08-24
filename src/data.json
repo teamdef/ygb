@@ -8,6 +8,7 @@
             {
                 "id": 220641,
                 "name": "성산 일출봉",
+                "description": "유네스코 자연 유산에 등재된, 제주 일출명소",
                 "image": "/ygb/assets/img/main/064/064_1.png",
                 "items": [
                     {
@@ -810,9 +811,11 @@
             },
             {
                 "id": 220642,
-                "name": "신양섭지 섭지코지",
+                "name": "신양섭지 / 섭지코지",
+                "description": "‘성산일출봉’과 일출, 일몰을 아름답게 볼 수 있는 곳",
                 "image": "/ygb/assets/img/main/064/064_2.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220642001,
                         "name": "낯선하루",
                         "time": 5,
@@ -1114,8 +1117,10 @@
             }, {
                 "id": 220643,
                 "name": "중문 관광단지",
+                "description": "볼거리, 즐길거리가 넘치는 복합관광단지",
                 "image": "/ygb/assets/img/main/064/064_3.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220643001,
                         "name": "후스토리게스트하우스",
                         "time": 5,
@@ -1927,9 +1932,11 @@
             },
             {
                 "id": 220644,
-                "name": "이중섭거리 올레시장",
+                "name": "이중섭거리 / 올레시장",
+                "description": "이중섭의 흔적과 먹거리를 찾을 수 있는 곳",
                 "image": "/ygb/assets/img/main/064/064_4.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220644001,
                         "name": "청춘 게스트하우스",
                         "time": 5,
@@ -3033,8 +3040,10 @@
             {
                 "id": 220645,
                 "name": "곽지해수욕장",
+                "description": "노천탕과 용천수를 볼 수 있는 해수욕장",
                 "image": "/ygb/assets/img/main/064/064_5.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220645001,
                         "name": "설레임게스트하우스",
                         "time": 10,
@@ -3515,8 +3524,10 @@
             {
                 "id": 220646,
                 "name": "한담해변",
+                "description": "유명 카페와 액티비티를 즐기기 좋은 해변",
                 "image": "/ygb/assets/img/main/064/064_6.png",
-                "items": [{
+                "items": [
+                    {
                         "id": 220646001,
                         "name": "포세이돈게스트하우스",
                         "time": 5,
@@ -3755,12 +3766,14 @@
             {
                 "id": 220647,
                 "name": "협재해수욕장",
+                "description": "비양도가 보이는 에메랄드빛 해수욕장",
                 "image": "/ygb/assets/img/main/064/064_7.png",
                 "items": []
             },
             {
                 "id": 220648,
                 "name": "금능해수욕장",
+                "description": "‘우리들의 블루스’ 촬영지, 아름다운 제주 바다",
                 "image": "/ygb/assets/img/main/064/064_8.png",
                 "items": []
             }
