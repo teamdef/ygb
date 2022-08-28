@@ -9,6 +9,7 @@ import PhotoView from "./PhotoView";
 const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
   const [showImg, setShowImg] = useState(false);
+  const [loading, setLoading] = useState(true);
   const isShowMap = () => {
     setShowMap(true);
   };
@@ -32,7 +33,13 @@ const Card = ({ item }) => {
     <>
       <CardEl>
         <div className="card-img">
-          <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
+          <img
+            src={item.image[0]}
+            alt="thumbnail"
+            onClick={isShowImg}
+            onLoad={() => setLoading(false)}
+          />
+          {loading ? <div className="skeleton-img"></div> : ""}
         </div>
         <div className="card-info">
           <strong className="card-name">{item.name}</strong>
@@ -73,6 +80,15 @@ const Card = ({ item }) => {
 
 // styled-components
 const CardEl = styled.div`
+  @keyframes loading {
+    0% {
+      transform: translateX(0);
+    }
+    50%,
+    100% {
+      transform: translateX(100%);
+    }
+  }
   position: relative;
   display: block;
   border-radius: 8px;
@@ -81,7 +97,8 @@ const CardEl = styled.div`
   height: 100%;
   box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.08);
   @media screen and (max-width: 1024px) {
-    .card-img {
+    .card-img,
+    .skeleton-img {
       height: 218px !important;
     }
     .card-info {
@@ -96,7 +113,8 @@ const CardEl = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    .card-img {
+    .card-img,
+    .skeleton-img {
       height: 200px !important;
     }
     .card-info {
@@ -115,6 +133,19 @@ const CardEl = styled.div`
       height: 100%;
       object-fit: cover;
     }
+  }
+  .skeleton-img {
+    position:absolute;
+    display:block;
+    width:100%;
+    height:236px;
+    background: linear-gradient(
+      90deg,
+      #999 0%,
+      #ffffffae 30%,
+      #999 60%
+    );
+    animation: loading 1.5s infinite linear;
   }
 
   .card-info {

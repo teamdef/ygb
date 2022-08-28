@@ -44,9 +44,12 @@ const Room = () => {
     return parseFloat(a.time) - parseFloat(b.time);
   });
   /** 시간별 구분 -> 가격순으로 재정렬 후 map으로 jsx 로 반환  */
-  const distance_5 = items.filter((item) => item.time >= 5 && item.time < 10).sort((a, b) => {
+  const distance_5 = items
+    .filter((item) => item.time >= 5 && item.time < 10)
+    .sort((a, b) => {
       return parseFloat(a.price) - parseFloat(b.price);
-    }).map((item) => <Card item={item} key={item.id} />);
+    })
+    .map((item) => <Card item={item} key={item.id} />);
   const distance_10 = items
     .filter((item) => item.time >= 10 && item.time < 15)
     .sort((a, b) => {
@@ -336,27 +339,38 @@ const RoomListLayout = styled.div`
   // ------------------------------------------main -----------------------------------------
   .main {
     position: relative;
-    padding: 48px 12.5% 10% 12.5%;
+    padding: 104px 12.5% 120px 12.5%;
     min-height: calc(100vh - (228px));
     .container {
       .section-nav {
         z-index: 9999;
         position: fixed;
         top: 128px;
+        &::before {
+          content: "";
+          position: fixed;
+          left: 0;
+          display: block;
+          width: 100vw;
+          height: 56px;
+          background: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(10px);
+        }
         ul {
           position: relative;
           display: flex;
-          padding: 10px 0;
+          height: 56px;
+          align-items: center;
           li {
             button {
               position: relative;
               display: block;
-              padding: 10px 20px;
-              border-radius: 30px;
-              background-color: #eee;
-              color: #767676;
-              font-size: 1.5rem;
-              margin-right: 20px;
+              padding: 7px 12px;
+              border-radius: 4px;
+              background-color: #e9e9ed;
+              color: #999;
+              font-size: 1.4rem;
+              margin-right: 16px;
               opacity: 0.7;
               border: 0;
               &.active {
@@ -367,21 +381,53 @@ const RoomListLayout = styled.div`
             }
           }
         }
+        @media screen and (max-width: 1024px) {
+          ul,
+          &::before {
+            height: 48px;
+          }
+          li button {
+            margin-right: 8px;
+          }
+        }
       }
       section {
         position: relative;
         padding-top: 150px;
+        @media screen and (max-width: 1024px) {
+          padding-top: 104px;
+          padding-bottom: 56px;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 100vw;
+            height: 8px;
+            background-color: #e9e9ed;
+          }
+          .distance {
+            top: 56px !important;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            &::before {
+              content: none;
+            }
+          }
+        }
         .distance {
           position: absolute;
           display: block;
-          top: 100px;
+          top: 80px;
           font-family: "Pretendard-Bold";
           font-size: 2.8rem;
           b {
             color: #205cff;
           }
         }
-
         .card-wrap {
           position: relative;
           display: grid;
@@ -417,13 +463,16 @@ const RoomListLayout = styled.div`
       }
     }
 
-    @media screen and (max-width: 480px) {
-      padding: 100px 4%;
+    @media screen and (max-width: 1024px) {
+      padding-top: 96px;
     }
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 480px) {
+      padding: 96px 4%;
       .card-wrap {
         grid-template-columns: repeat(1, 1fr) !important;
       }
+    }
+    @media screen and (max-width: 390px) {
     }
   }
 `;
