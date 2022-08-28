@@ -6,6 +6,13 @@
         "image": "/ygb/assets/img/main/main_1.png",
         "detail": [
             {
+                "id": 220649,
+                "name": "제주국제공항",
+                "description": "친절한 공항, 다시 찾고 싶은 공항",
+                "image": "/ygb/assets/img/main/064/064_1.png",
+                "items": []
+            },
+            {
                 "id": 220641,
                 "name": "성산 일출봉",
                 "description": "유네스코 자연 유산에 등재된, 제주 일출명소",

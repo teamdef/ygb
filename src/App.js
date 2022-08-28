@@ -6,7 +6,7 @@ import Main from "./pages/Main";
 import Point from "./pages/Point";
 import NotFound from "./pages/NotFound";
 import Room from "./pages/Room";
-import { BrowserRouter, Routes, Route,useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

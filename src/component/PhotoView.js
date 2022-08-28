@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {GrClose} from "react-icons/gr"
+import { GrFormClose } from "react-icons/gr";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -11,23 +11,27 @@ import "swiper/css/scrollbar";
 
 const PhotoView = ({ setShowImg, item }) => {
   const itemList = item.image;
-  console.log(item);
   return (
     <PhotoViewEl>
-      <div
-        id="bg"
-        onClick={() => {
-          setShowImg(false);
-        }}
-      ></div>
+      <div className="photo-bar">
+        <button className="close-btn">
+          <GrFormClose
+            size="30"
+            onClick={() => {
+              setShowImg(false);
+            }}
+          />
+        </button>
+      </div>
       <div className="photo-area">
+        
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           slidesPerView={1}
           loop={true}
           navigation
-          pagination={{ clickable: true, type: "fraction"}}
+          pagination={{ clickable: true, type: "fraction" }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide !")}
         >
@@ -37,7 +41,6 @@ const PhotoView = ({ setShowImg, item }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      <button className="close-btn"><GrClose size="24" onClick={() => {setShowImg(false)}}/></button>
       </div>
     </PhotoViewEl>
   );
@@ -50,53 +53,73 @@ const PhotoViewEl = styled.div`
   display: block;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 99999;
+  background-color: #eee;
+  .photo-bar {
+    position:relative;
+    display:flex;
+    justify-content: right;
+    padding: 0 12.5%;
+    height: 48px;
+    background-color: #fff;
+    .close-btn {
+      position: relative;
+      display:block;
+      z-index: 1;
+      background-color: transparent;
+      z-index: 99;
+      border: 0;
+      path {
+        stroke: #000;
+      }
+    }
+  }
   .photo-area {
-    position: absolute;
+    position:relative;
     display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+    width:100%;
+    height:calc(100% - 48px);
+    .swiper-pagination {
+      position:fixed;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left:50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 48px;
+      z-index: 1;
+      span {
+        &:last-child {
+          color: #00c2d6;
+        }
+        margin: 0 5px;
+      }
+    }
     .swiper {
-      width: 400px;
-      height: 400px;
+      width: 100%;
+      height: 100%;
       .img-item {
         position: relative;
         display: block;
-        padding:30px 50px;
-        width:100%;
-        height:100%;
+        padding: 0 12.5%;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
       }
-      .swiper-button-next, 
+      .swiper-button-next,
       .swiper-button-prev {
-        color:#a6dbe1;
-      } 
+        color: #000;
+      }
       .swiper-pagination {
         top: 0px;
         bottom: auto;
-        font-size: 1.2rem;
-        color: #a6dbe1;
+        font-size: 2rem;
+        color: #000;
       }
     }
   }
-  .close-btn {
-    position: absolute;
-    z-index: 1;      
-    bottom: -20%;
-    right: 50%;
-    transform:translateX(50%);
-    path {
-      stroke: white;
-    }
-  }
-  #bg {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  
 `;
 export default PhotoView;

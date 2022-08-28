@@ -31,12 +31,6 @@ const Card = ({ item }) => {
   return (
     <>
       <CardEl>
-        {/* <span id="time">
-        도보
-        <em style={{ fontStyle: "normal", color: "red" }}> {item.time} </em>
-        분 내 위치
-        <BiWalk size="25" color="#000" />
-      </span> */}
         <div className="card-img">
           <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
         </div>
