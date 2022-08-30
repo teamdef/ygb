@@ -39,7 +39,7 @@ const Point = () => {
         <div className="detail-name">
           <div className="container">
             <div>
-              <img src={Data.region[value].image} alt="여행지이미지" />
+              <img src={Data.region[value].banner} alt="여행지이미지" />
               <h1>{Data.region[value].name}</h1>
             </div>
           </div>
@@ -85,9 +85,13 @@ min-height:calc(100vh - 150px);
         >div {
           position: relative;
           height: 100%;
+          clip-path: inset(0);
         }
         img {
-          width: 100%;
+          position:fixed;
+          left: 50%;
+          height: 200px;
+          transform:translateX(-50%);
         }
         h1 {
           position: absolute;
@@ -150,6 +154,9 @@ min-height:calc(100vh - 150px);
   @media screen and (max-width: 1024px) {
     .detail-name {
       height:140px !important;
+      img {
+        height: 140px !important;
+      }
     }
     .detail {
       .detail-main {

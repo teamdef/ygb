@@ -32,13 +32,16 @@ const Card = ({ item }) => {
   return (
     <>
       <CardEl>
-        <div className="card-img">
+        <div className="card-top">
           <img
+            className="card-img"
             src={item.image[0]}
             alt="thumbnail"
-            onClick={isShowImg}
             onLoad={() => setLoading(false)}
           />
+          <button className="img-btn" onClick={isShowImg}>
+            <img src="/ygb/img.png"></img>
+          </button>
           {loading ? <div className="skeleton-img"></div> : ""}
         </div>
         <div className="card-info">
@@ -97,7 +100,7 @@ const CardEl = styled.div`
   height: 100%;
   box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.08);
   @media screen and (max-width: 1024px) {
-    .card-img,
+    .card-top,
     .skeleton-img {
       height: 218px !important;
     }
@@ -113,7 +116,7 @@ const CardEl = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
-    .card-img,
+    .card-top,
     .skeleton-img {
       height: 200px !important;
     }
@@ -121,30 +124,38 @@ const CardEl = styled.div`
       padding: 15px !important;
     }
   }
-  .card-img {
+  .card-top {
     position: relative;
     display: block;
     width: 100%;
     height: 236px;
     overflow: hidden;
-    img {
+    .card-img {
       position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+    button {
+      position: absolute;
+      display: block;
+      right: 20px;
+      bottom: 16px;
+      width: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      border-radius: 2px;
+      height: 40px;
+      border: 0;
+      z-index: 1;
+    }
   }
   .skeleton-img {
-    position:absolute;
-    display:block;
-    width:100%;
-    height:236px;
-    background: linear-gradient(
-      90deg,
-      #999 0%,
-      #ffffffae 30%,
-      #999 60%
-    );
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 236px;
+    background: linear-gradient(90deg, #999 0%, #ffffffae 30%, #999 60%);
     animation: loading 1.5s infinite linear;
   }
 
