@@ -133,6 +133,7 @@ min-height:calc(100vh - 150px);
             position:relative;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             padding: 5%;
             .card-title {
               position:relative;

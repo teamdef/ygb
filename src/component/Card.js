@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { RiMapPinLine } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
+import SkeletonCard from "../component/SkeletonCard";
 
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
@@ -32,6 +33,7 @@ const Card = ({ item }) => {
   return (
     <>
       <CardEl>
+      {loading ? <SkeletonCard /> : ""}
         <div className="card-top">
           <img
             className="card-img"
@@ -42,7 +44,6 @@ const Card = ({ item }) => {
           <button className="img-btn" onClick={isShowImg}>
             <img src="/ygb/img.png"></img>
           </button>
-          {loading ? <div className="skeleton-img"></div> : ""}
         </div>
         <div className="card-info">
           <strong className="card-name">{item.name}</strong>
@@ -155,7 +156,7 @@ const CardEl = styled.div`
     display: block;
     width: 100%;
     height: 236px;
-    background: linear-gradient(90deg, #999 0%, #ffffffae 30%, #999 60%);
+    background: linear-gradient(90deg, #e9e9ed 0%, #ffffffae 30%, #e9e9ed 60%);
     animation: loading 1.5s infinite linear;
   }
 
@@ -226,5 +227,4 @@ const CardEl = styled.div`
     }
   }
 `;
-
 export default Card;
