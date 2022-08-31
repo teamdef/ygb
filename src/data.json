@@ -4,10 +4,19 @@
         "name": "제주도",
         "open": true,
         "image": "/ygb/assets/img/main/main_1.png",
+        "banner": "/ygb/assets/img/main/main_1_banner.png",
         "detail": [{
+                "id": 220649,
+                "name": "제주국제공항",
+                "description": "친절한 공항, 다시 찾고 싶은 공항",
+                "image": "/ygb/assets/img/main/064/064_9.jpg",
+                "items": []
+            },
+            {
                 "id": 220641,
                 "name": "성산 일출봉",
-                "image": "/ygb/assets/img/main/064/064_1.png",
+                "description": "유네스코 자연 유산에 등재된, 제주 일출명소",
+                "image": "/ygb/assets/img/main/064/064_1.jpg",
                 "items": [{
                         "id": 220641001,
                         "name": "히든스테이",
@@ -15,7 +24,7 @@
                         "price": 54900,
                         "lat": 33.4630653,
                         "lng": 126.934423,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1646763081?c=14129423.3599071,3956796.1838458,15,0,0,0,dh&placePath=%3FbusinessCategory%253Dguesthouse%2526entry%253Dpll%2526from%253Dnx%2526fromNxList%253Dtrue%2526level%253Dtop%2526mapUrl%253Dhttps%253A%252F%252Fmap.naver.com%252Fv5%252Fsearch%252F%2525EC%252584%2525B1%2525EC%252582%2525B0%2525EC%25259D%2525BC%2525EC%2525B6%25259C%2525EB%2525B4%252589%252520%2525EA%2525B2%25258C%2525EC%25258A%2525A4%2525ED%25258A%2525B8%2525ED%252595%252598%2525EC%25259A%2525B0%2525EC%25258A%2525A4%253FplaceSearchOption%253Dfrom%253Dnx%252526fromNxList%253Dtrue%252526businessCategory%253Dguesthouse%252526entry%253Dpll%252526level%253Dtop%252526x%253D126.8125687%252526y%253D37.3450842%2526query%253D%25EC%2584%25B1%25EC%2582%25B0%25EC%259D%25BC%25EC%25B6%259C%25EB%25B4%2589%2520%25EA%25B2%258C%25EC%258A%25A4%25ED%258A%25B8%25ED%2595%2598%25EC%259A%25B0%25EC%258A%25A4%2526ts%253D1658968632151%2526x%253D126.8125687%2526y%253D37.3450842",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641001_01.jpg",
@@ -39,7 +48,7 @@
                         "price": 20000,
                         "lat": 33.4617941,
                         "lng": 126.934499,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1643158458?c=14130050.3335432,3956758.5281478,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641002_01.jpg",
@@ -54,12 +63,12 @@
                         "checkout": 1000
                     }, {
                         "id": 220641003,
-                        "name": "제주도 성산일출봉 게스트하우스 파티 코시롱",
+                        "name": "코시롱",
                         "time": 5,
                         "price": 20000,
                         "lat": 33.4631908,
                         "lng": 126.933111,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/37046591?c=14129196.8247434,3956947.0080209,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641003_01.jpg",
@@ -81,7 +90,7 @@
                         "price": 20000,
                         "lat": 33.4606840,
                         "lng": 126.932575,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/740730279?c=14129885.8589955,3956870.7750482,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641004_01.jpg",
@@ -101,7 +110,7 @@
                         "price": 40000,
                         "lat": 33.4630653,
                         "lng": 126.934423,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/1280230317?c=14130050.7676892,3956971.2003856,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641005_01.jpg",
@@ -123,7 +132,7 @@
                         "price": 30000,
                         "lat": 33.4641564,
                         "lng": 126.934745,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/37257067?c=14130126.6096583,3956934.1712766,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641006_01.jpg",
@@ -164,7 +173,7 @@
                         "price": 13000,
                         "lat": 33.4638946,
                         "lng": 126.934154,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/34069363?c=14130064.5045143,3957086.4517444,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641008_01.jpg",
@@ -179,7 +188,7 @@
                         "price": 24900,
                         "lat": 33.4637590,
                         "lng": 126.933476,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/1610477619?c=14129769.8084264,3957129.4461195,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641009_01.jpg",
@@ -199,7 +208,7 @@
                         "price": 39000,
                         "lat": 33.4637590,
                         "lng": 126.933476,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/38015516?c=14129769.8084264,3957129.4461195,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641010_01.jpg",
@@ -217,7 +226,7 @@
                         "price": 20000,
                         "lat": 33.4641829,
                         "lng": 126.933648,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/21587604?c=14129831.3124450,3957086.4517444,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641011_01.jpg",
@@ -236,7 +245,7 @@
                         "price": 30000,
                         "lat": 33.4649671,
                         "lng": 126.933368,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/21693197?c=14129831.3124450,3957086.4517444,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641012_01.jpg",
@@ -255,7 +264,7 @@
                         "price": 25000,
                         "lat": 33.4660499,
                         "lng": 126.935002,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%EA%B2%8C%ED%95%98/place/37684272?c=14129768.0161826,3957146.1661974,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641013_01.jpg",
@@ -688,7 +697,7 @@
                         "price": 46946,
                         "lat": 33.4637866,
                         "lng": 126.934390,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/1120489101?c=14129799.8312930,3957199.6492586,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641033_01.jpg",
@@ -710,7 +719,7 @@
                         "price": 41607,
                         "lat": 33.4636863,
                         "lng": 126.932390,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/37622432?c=14129756.8397057,3957162.6327623,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641034_01.jpg",
@@ -730,7 +739,7 @@
                         "price": 86777,
                         "lat": 33.4622700,
                         "lng": 126.931046,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/38681094?c=14129714.9947091,3957183.9432542,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641035_01.jpg",
@@ -749,7 +758,7 @@
                         "price": 98043,
                         "lat": 33.4660932,
                         "lng": 126.931721,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/1236944819?c=14129784.2688282,3957322.4824250,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641036_01.jpg",
@@ -771,7 +780,7 @@
                         "price": 55000,
                         "lat": 33.4664083,
                         "lng": 126.930989,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/35911590?c=14129619.4491902,3957561.3469614,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641037_01.jpg",
@@ -791,7 +800,7 @@
                         "price": 51025,
                         "lat": 33.4665525,
                         "lng": 126.930774,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89%20%ED%98%B8%ED%85%94/place/35902718?c=14129448.6628274,3957450.2676662,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220641/220641038_01.jpg",
@@ -808,8 +817,9 @@
             },
             {
                 "id": 220642,
-                "name": "신양섭지 섭지코지",
-                "image": "/ygb/assets/img/main/064/064_2.png",
+                "name": "신양섭지 / 섭지코지",
+                "description": "‘성산일출봉’과 일출, 일몰을 아름답게 볼 수 있는 곳",
+                "image": "/ygb/assets/img/main/064/064_2.jpg",
                 "items": [{
                         "id": 220642001,
                         "name": "낯선하루",
@@ -817,7 +827,7 @@
                         "price": 25000,
                         "lat": 33.4362704,
                         "lng": 126.920776,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%EA%B2%8C%ED%95%98/place/1688119807?c=14127842.4227628,3953342.9642175,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642001_01.jpg",
@@ -841,7 +851,7 @@
                         "price": 25000,
                         "lat": 33.4356030,
                         "lng": 126.920443,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%EA%B2%8C%ED%95%98/place/117234546?c=14127842.4227628,3953342.9642175,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642002_01.jpg",
@@ -865,7 +875,7 @@
                         "price": 25000,
                         "lat": 33.4376415,
                         "lng": 126.921732,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%EA%B2%8C%ED%95%98/place/1251715998?c=14127923.2741089,3953535.6172058,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642003_01.jpg",
@@ -887,7 +897,7 @@
                         "price": 50000,
                         "lat": 33.4379476,
                         "lng": 126.920968,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%EA%B2%8C%ED%95%98/place/37017886?c=14127923.2741089,3953535.6172058,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642004_01.jpg",
@@ -922,28 +932,6 @@
                         "checkin": null,
                         "checkout": null
                     },
-
-                    {
-                        "id": 220642006,
-                        "name": "제주동쪽",
-                        "time": 10,
-                        "price": 25000,
-                        "lat": 33.4376415,
-                        "lng": 126.921732,
-                        "type": 1,
-                        "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%EA%B2%8C%ED%95%98/place/1251715998?c=14128092.8693532,3953182.1023625,15,0,0,0,dh",
-                        "image": [
-                            "/ygb/assets/img/main/064/220642/220642006_01.jpg",
-                            "/ygb/assets/img/main/064/220642/220642006_02.jpg",
-                            "/ygb/assets/img/main/064/220642/220642006_03.jpg",
-                            "/ygb/assets/img/main/064/220642/220642006_04.jpg",
-                            "/ygb/assets/img/main/064/220642/220642006_05.jpg",
-                            "/ygb/assets/img/main/064/220642/220642006_06.jpg"
-                        ],
-                        "checkin": 1700,
-                        "checkout": 1000
-                    },
-
                     {
                         "id": 220642007,
                         "name": "라메종베니",
@@ -1045,7 +1033,7 @@
                         "price": 42000,
                         "lat": 33.4367196,
                         "lng": 126.918324,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%84%AD%EC%A7%80%EC%BD%94%EC%A7%80%20%ED%98%B8%ED%85%94/place/1168741444?c=14128027.3021731,3953244.5312771,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642011_01.jpg",
@@ -1069,7 +1057,7 @@
                         "price": 290000,
                         "lat": 33.4302523,
                         "lng": 126.928158,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/entry/place/12348587?c=14129018.5911067,3952922.0522049,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642012_01.jpg",
@@ -1093,7 +1081,7 @@
                         "price": 134000,
                         "lat": 33.4272847,
                         "lng": 126.925988,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/entry/place/36504766?c=14129018.5911067,3952922.0522049,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220642/220642013_01.jpg",
@@ -1112,7 +1100,8 @@
             }, {
                 "id": 220643,
                 "name": "중문 관광단지",
-                "image": "/ygb/assets/img/main/064/064_3.png",
+                "description": "볼거리, 즐길거리가 넘치는 복합관광단지",
+                "image": "/ygb/assets/img/main/064/064_3.jpg",
                 "items": [{
                         "id": 220643001,
                         "name": "후스토리게스트하우스",
@@ -1120,7 +1109,7 @@
                         "price": 25000,
                         "lat": 33.2570777,
                         "lng": 126.413089,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%EA%B2%8C%ED%95%98/place/21848492?c=14071770.9956253,3929479.4356818,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643001_01.jpg",
@@ -1164,7 +1153,7 @@
                         "price": 100000,
                         "lat": 33.2607743,
                         "lng": 126.411175,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%EA%B2%8C%ED%95%98/place/1809515149?c=14070912.9672542,3929563.2099960,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643003_01.jpg",
@@ -1245,11 +1234,7 @@
                         ],
                         "checkin": 1600,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220643007,
                         "name": "해누리펜션",
                         "time": 15,
@@ -1270,11 +1255,7 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220643008,
                         "name": "해라의성펜션",
                         "time": 10,
@@ -1295,11 +1276,7 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220643009,
                         "name": "중문그린힐통나무펜션",
                         "time": 15,
@@ -1316,11 +1293,7 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220643010,
                         "name": "이어도성",
                         "time": 10,
@@ -1343,11 +1316,7 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220643011,
                         "name": "해성펜션",
                         "time": 15,
@@ -1370,10 +1339,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643012,
                         "name": "천제연휴양펜션",
@@ -1392,10 +1357,6 @@
                         "checkin": 1400,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643013,
                         "name": "올리수펜션",
@@ -1415,10 +1376,6 @@
                         "checkin": 1400,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643014,
                         "name": "해성파크텔",
@@ -1440,10 +1397,6 @@
                         "checkin": 1500,
                         "checkout": 1200
                     },
-
-
-
-
                     {
                         "id": 220643015,
                         "name": "중문 W오션 펜션",
@@ -1464,10 +1417,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643016,
                         "name": "채움키즈풀빌라",
@@ -1491,10 +1440,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
 
                     {
                         "id": 220643017,
@@ -1520,10 +1465,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220643018,
                         "name": "씨사이드아덴",
@@ -1548,10 +1489,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643019,
                         "name": "롯데호텔 제주",
@@ -1559,7 +1496,7 @@
                         "price": 251000,
                         "lat": 33.2483112,
                         "lng": 126.410594,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/11583214?c=14071583.1551165,3928433.6853558,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643019_01.jpg",
@@ -1576,10 +1513,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643020,
                         "name": "제주신라호텔",
@@ -1587,7 +1520,7 @@
                         "price": 410000,
                         "lat": 33.2474556,
                         "lng": 126.408893,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/11583210?c=14071430.1353445,3928511.4354991,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643020_01.jpg",
@@ -1610,7 +1543,7 @@
                         "price": 220000,
                         "lat": 33.2493112,
                         "lng": 126.408527,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/10983842?c=14071458.8001134,3928652.3614541,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643021_01.jpg",
@@ -1627,10 +1560,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643022,
                         "name": "블룸호텔",
@@ -1638,7 +1567,7 @@
                         "price": 63000,
                         "lat": 33.2498688,
                         "lng": 126.408233,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1736530594?c=14071458.8001134,3928652.3614541,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643022_01.jpg",
@@ -1655,10 +1584,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643023,
                         "name": "그랜드 조선 제주",
@@ -1666,7 +1591,7 @@
                         "price": 236000,
                         "lat": 33.2459570,
                         "lng": 126.400974,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1743034178?c=14071375.1991758,3928747.9104092,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643023_01.jpg",
@@ -1683,10 +1608,6 @@
                         "checkin": 1500,
                         "checkout": 1200
                     },
-
-
-
-
                     {
                         "id": 220643024,
                         "name": "씨에스호텔엔리조트",
@@ -1694,7 +1615,7 @@
                         "price": 320000,
                         "lat": 33.2423630,
                         "lng": 126.420698,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/11588707?c=14072316.7282970,3927644.3531484,15,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643024_01.jpg",
@@ -1710,10 +1631,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643025,
                         "name": "아리아호텔",
@@ -1721,7 +1638,7 @@
                         "price": 78000,
                         "lat": 33.2557905,
                         "lng": 126.415437,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/34581917?c=14072130.4128652,3929023.7927874,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643025_01.jpg",
@@ -1735,10 +1652,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643026,
                         "name": "호텔더그랑 중문",
@@ -1746,7 +1659,7 @@
                         "price": 68000,
                         "lat": 33.2574028,
                         "lng": 126.413183,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1486030635?c=14072015.7537897,3929337.9006617,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643026_01.jpg",
@@ -1763,10 +1676,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220643027,
                         "name": "아루미호텔 중문점",
@@ -1774,7 +1683,7 @@
                         "price": 56000,
                         "lat": 33.2585973,
                         "lng": 126.414119,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1132646857?c=14071904.6792018,3929426.2799743,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643027_01.jpg",
@@ -1790,10 +1699,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220643028,
                         "name": "베니키아중문호텔",
@@ -1801,7 +1706,7 @@
                         "price": 65000,
                         "lat": 33.2519014,
                         "lng": 126.422459,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/36854925?c=14072669.4441035,3927774.5271810,15,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643028_01.jpg",
@@ -1817,10 +1722,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220643029,
                         "name": "유어스호텔",
@@ -1828,7 +1729,7 @@
                         "price": 48000,
                         "lat": 33.2499060,
                         "lng": 126.423792,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1793346032?c=14073082.4839422,3928345.4067613,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643029_01.jpg",
@@ -1844,10 +1745,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220643030,
                         "name": "스테이인터뷰 제주",
@@ -1855,7 +1752,7 @@
                         "price": 85000,
                         "lat": 33.2458307,
                         "lng": 126.429656,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1082853437?c=14073621.1255623,3927497.4365982,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643030_01.jpg",
@@ -1871,10 +1768,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643031,
                         "name": "썬라이즈호텔 중문점",
@@ -1882,7 +1775,7 @@
                         "price": 58000,
                         "lat": 33.2475209,
                         "lng": 126.430568,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/37233472?c=14073770.4161314,3927732.7195952,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643031_01.jpg",
@@ -1898,10 +1791,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220643032,
                         "name": "오션블루호텔",
@@ -1909,7 +1798,7 @@
                         "price": 26000,
                         "lat": 33.2389009,
                         "lng": 126.430452,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%EB%8F%84%20%EC%A4%91%EB%AC%B8%20%ED%98%B8%ED%85%94/place/1359987679?c=14073557.8292998,3927560.7390626,16,0,0,3,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220643/220643032_01.jpg",
@@ -1925,8 +1814,9 @@
             },
             {
                 "id": 220644,
-                "name": "이중섭거리 올레시장",
-                "image": "/ygb/assets/img/main/064/064_4.png",
+                "name": "이중섭거리 / 올레시장",
+                "description": "이중섭의 흔적과 먹거리를 찾을 수 있는 곳",
+                "image": "/ygb/assets/img/main/064/064_4.jpg",
                 "items": [{
                         "id": 220644001,
                         "name": "청춘 게스트하우스",
@@ -1934,7 +1824,7 @@
                         "price": 22000,
                         "lat": 33.2452686,
                         "lng": 126.564484,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/1172360520?c=14088915.9337915,3928074.5585837,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644001_01.jpg",
@@ -1957,7 +1847,7 @@
                         "price": 22000,
                         "lat": 33.2441072,
                         "lng": 126.562418,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/13181509?c=14088798.8924789,3927757.7695219,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644002_01.jpg",
@@ -1981,7 +1871,7 @@
                         "price": 90000,
                         "lat": 33.2465418,
                         "lng": 126.565035,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/36333102?c=14088576.7433031,3927827.0364438,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644003_01.jpg",
@@ -2005,7 +1895,7 @@
                         "price": 22000,
                         "lat": 33.2471825,
                         "lng": 126.560085,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/1052406665?c=14088083.4866394,3928190.0955647,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644004_01.jpg",
@@ -2029,7 +1919,7 @@
                         "price": 22000,
                         "lat": 33.2470437,
                         "lng": 126.559088,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/34345716?c=14088161.1208522,3928143.5212450,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644005_01.jpg",
@@ -2054,7 +1944,7 @@
                         "price": 22000,
                         "lat": 33.2474213,
                         "lng": 126.558764,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/38507465?c=14088161.1208522,3928143.5212450,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644006_01.jpg",
@@ -2070,18 +1960,14 @@
                         ],
                         "checkin": 1600,
                         "checkout": 1000
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644007,
                         "name": "미친게스트하우스",
                         "time": 15,
                         "price": 22000,
                         "lat": 33.2480342,
                         "lng": 126.558718,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/1018266328?c=14088370.1343281,3928286.8387028,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644007_01.jpg",
@@ -2091,18 +1977,14 @@
                         ],
                         "checkin": 1700,
                         "checkout": 1000
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644008,
                         "name": "미도호스텔",
                         "time": 10,
                         "price": 23000,
                         "lat": 33.2500993,
                         "lng": 126.566498,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/36454207?c=14088585.1033968,3928498.8298508,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644008_01.jpg",
@@ -2118,18 +2000,14 @@
                         ],
                         "checkin": 1600,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644009,
                         "name": "GH STAY",
                         "time": 5,
                         "price": 22000,
                         "lat": 33.2504982,
                         "lng": 126.564554,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/564835164?c=14088585.1033968,3928498.8298508,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644009_01.jpg",
@@ -2141,18 +2019,14 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1100
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644010,
                         "name": "슬로우시티게스트하우스",
                         "time": 5,
                         "price": 22000,
                         "lat": 33.2506371,
                         "lng": 126.560454,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/35424528?c=14088260.2508588,3928486.8897720,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644010_01.jpg",
@@ -2168,18 +2042,14 @@
                         ],
                         "checkin": 1400,
                         "checkout": 1000
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644011,
                         "name": "꼬닥꼬닥 게스트하우스",
                         "time": 10,
                         "price": 22000,
                         "lat": 33.2509154,
                         "lng": 126.560120,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/31135333?c=14088260.2508588,3928486.8897720,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644011_01.jpg",
@@ -2194,18 +2064,14 @@
                         ],
                         "checkin": 1500,
                         "checkout": 1000
-                    },
-
-
-
-                    {
+                    },                    {
                         "id": 220644012,
                         "name": "민중각게스트하우스",
                         "time": 10,
                         "price": 15000,
                         "lat": 33.2506853,
                         "lng": 126.558801,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%EA%B2%8C%ED%95%98/place/33254245?c=14088260.2508588,3928486.8897720,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644012_01.jpg",
@@ -2218,10 +2084,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644013,
                         "name": "호텔연",
@@ -2229,7 +2091,7 @@
                         "price": 37000,
                         "lat": 33.2439893,
                         "lng": 126.562204,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%8E%9C%EC%85%98/place/37541959?c=14088545.9857278,3928035.1458276,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644013_01.jpg",
@@ -2242,10 +2104,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644014,
                         "name": "하얀파도",
@@ -2267,10 +2125,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644015,
                         "name": "해변의집 영빈",
@@ -2292,36 +2146,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
-                    {
-                        "id": 220644016,
-                        "name": "제주나인부띠끄호텔",
-                        "time": 15,
-                        "price": 57600,
-                        "lat": 33.2426297,
-                        "lng": 126.562737,
-                        "type": 4,
-                        "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%8E%9C%EC%85%98/place/36313120?c=14088548.4013607,3927794.9718239,16,0,0,0,dh",
-                        "image": [
-                            "/ygb/assets/img/main/064/220644/220644016_01.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_02.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_03.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_04.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_05.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_06.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_07.jpg",
-                            "/ygb/assets/img/main/064/220644/220644016_08.jpg"
-                        ],
-                        "checkin": 1600,
-                        "checkout": 1100
-                    },
-
-
-
-
                     {
                         "id": 220644017,
                         "name": "솔동산스테이",
@@ -2329,7 +2153,7 @@
                         "price": 42000,
                         "lat": 33.2408623,
                         "lng": 126.562692,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%8E%9C%EC%85%98/place/37677133?c=14088652.3069734,3927763.9321848,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644017_01.jpg",
@@ -2342,10 +2166,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644018,
                         "name": "서귀맨션",
@@ -2368,10 +2188,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644019,
                         "name": "서귀맨션2",
@@ -2393,10 +2209,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220644020,
                         "name": "바다해호텔",
@@ -2419,10 +2231,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644021,
                         "name": "BK호텔",
@@ -2430,7 +2238,7 @@
                         "price": 39000,
                         "lat": 33.2410666,
                         "lng": 126.564376,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/37026904?c=14088689.2539124,3927201.4795191,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644021_01.jpg",
@@ -2445,10 +2253,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644022,
                         "name": "파이힐 호텔",
@@ -2456,7 +2260,7 @@
                         "price": 34000,
                         "lat": 33.2413554,
                         "lng": 126.564460,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/11779633?c=14088689.2539124,3927201.4795191,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644022_01.jpg",
@@ -2472,10 +2276,6 @@
                         "checkout": 1200
                     },
 
-
-
-
-
                     {
                         "id": 220644023,
                         "name": "피노호텔",
@@ -2483,7 +2283,7 @@
                         "price": 62000,
                         "lat": 33.2414238,
                         "lng": 126.563398,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/670625473?c=14088689.2539124,3927201.4795191,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644023_01.jpg",
@@ -2497,10 +2297,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644024,
                         "name": "천지연호텔",
@@ -2508,7 +2304,7 @@
                         "price": 45000,
                         "lat": 33.2419346,
                         "lng": 126.562515,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/36921260?c=14088689.2539124,3927201.4795191,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644024_01.jpg",
@@ -2521,10 +2317,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644025,
                         "name": "제주나인부띠끄호텔",
@@ -2532,7 +2324,7 @@
                         "price": 57600,
                         "lat": 33.2419346,
                         "lng": 126.562515,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/36313120?c=14088673.7248434,3927502.4544639,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644025_01.jpg",
@@ -2547,10 +2339,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644026,
                         "name": "메종드씨엘 하버39 호텔앤리조트",
@@ -2558,7 +2346,7 @@
                         "price": 85000,
                         "lat": 33.2423572,
                         "lng": 126.562159,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1093431773?c=14088673.7248434,3927502.4544639,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644026_01.jpg",
@@ -2571,10 +2359,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
 
                     {
                         "id": 220644027,
@@ -2599,10 +2383,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644028,
                         "name": "호텔브릿지 서귀포",
@@ -2610,7 +2390,7 @@
                         "price": 46000,
                         "lat": 33.2456010,
                         "lng": 126.566714,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1568221731?c=14088651.4609453,3928289.2213522,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644028_01.jpg",
@@ -2627,10 +2407,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644029,
                         "name": "디아일랜드블루호텔",
@@ -2638,7 +2414,7 @@
                         "price": 63000,
                         "lat": 33.2458775,
                         "lng": 126.565875,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/33874896?c=14088651.4609453,3928289.2213522,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644029_01.jpg",
@@ -2654,10 +2430,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644030,
                         "name": "신신호텔 서귀포",
@@ -2665,7 +2437,7 @@
                         "price": 27000,
                         "lat": 33.2455777,
                         "lng": 126.562658,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1050820005?c=14088651.4609453,3928289.2213522,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644030_01.jpg",
@@ -2680,10 +2452,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
 
 
                     {
@@ -2709,10 +2477,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644032,
                         "name": "퍼스트70 호텔",
@@ -2720,7 +2484,7 @@
                         "price": 50000,
                         "lat": 33.2474055,
                         "lng": 126.567070,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1903492245?c=14088712.3638387,3928253.3884871,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644032_01.jpg",
@@ -2735,10 +2499,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644033,
                         "name": "호텔굿인서귀포",
@@ -2746,7 +2506,7 @@
                         "price": 30000,
                         "lat": 33.2468063,
                         "lng": 126.565903,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/11599473?c=14088712.3638387,3928253.3884871,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644033_01.jpg",
@@ -2762,10 +2522,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644034,
                         "name": "베니치아호텔",
@@ -2773,7 +2529,7 @@
                         "price": 45000,
                         "lat": 33.2468551,
                         "lng": 126.561825,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/34602342?c=14088493.8102824,3928228.3108716,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644034_01.jpg",
@@ -2786,10 +2542,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
 
 
                     {
@@ -2815,10 +2567,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644036,
                         "name": "엠스테이호텔",
@@ -2826,7 +2574,7 @@
                         "price": 40000,
                         "lat": 33.2469332,
                         "lng": 126.560966,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1454627526?c=14088493.8102824,3928228.3108716,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644036_01.jpg",
@@ -2843,10 +2591,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644037,
                         "name": "칠십리호텔",
@@ -2854,7 +2598,7 @@
                         "price": 36000,
                         "lat": 33.2472231,
                         "lng": 126.561351,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/38308696?c=14088493.8102824,3928228.3108716,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644037_01.jpg",
@@ -2868,10 +2612,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644038,
                         "name": "원스토리호텔",
@@ -2879,7 +2619,7 @@
                         "price": 42000,
                         "lat": 33.2477419,
                         "lng": 126.557647,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1648472341?c=14088207.1625936,3928243.8313003,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644038_01.jpg",
@@ -2893,10 +2633,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644039,
                         "name": "호텔골든데이지 서귀포오션",
@@ -2904,7 +2640,7 @@
                         "price": 45000,
                         "lat": 33.2493812,
                         "lng": 126.567393,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/38507899?c=14088707.9555869,3928344.1289096,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644039_01.jpg",
@@ -2919,10 +2655,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644040,
                         "name": "호텔 케니 서귀포",
@@ -2930,7 +2662,7 @@
                         "price": 29000,
                         "lat": 33.2502297,
                         "lng": 126.565113,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1487392062?c=14088681.6841870,3928547.1626695,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644040_01.jpg",
@@ -2945,10 +2677,6 @@
                         "checkout": 1100
                     },
 
-
-
-
-
                     {
                         "id": 220644041,
                         "name": "호텔 가온 제이스테이",
@@ -2956,7 +2684,7 @@
                         "price": 14000,
                         "lat": 33.2494649,
                         "lng": 126.560439,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1207806491?c=14088292.3331360,3928655.8490171,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644041_01.jpg",
@@ -2970,10 +2698,6 @@
                     },
 
 
-
-
-
-
                     {
                         "id": 220644042,
                         "name": "신신호텔 천지연",
@@ -2981,7 +2705,7 @@
                         "price": 25000,
                         "lat": 33.2494555,
                         "lng": 126.557810,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1200000744?c=14087843.2703102,3928608.0748196,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644042_01.jpg",
@@ -2997,12 +2721,6 @@
                         "checkin": 1500,
                         "checkout": 1100
                     },
-
-
-
-
-
-
                     {
                         "id": 220644043,
                         "name": "호텔 휴식 서귀포",
@@ -3010,7 +2728,7 @@
                         "price": 27000,
                         "lat": 33.2503996,
                         "lng": 126.559608,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EC%9D%B4%EC%A4%91%EC%84%AD%EA%B1%B0%EB%A6%AC%20%ED%98%B8%ED%85%94/place/1058525972?c=14088352.0449109,3928704.8081225,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220644/220644043_01.jpg",
@@ -3031,7 +2749,8 @@
             {
                 "id": 220645,
                 "name": "곽지해수욕장",
-                "image": "/ygb/assets/img/main/064/064_5.png",
+                "description": "노천탕과 용천수를 볼 수 있는 해수욕장",
+                "image": "/ygb/assets/img/main/064/064_5.jpg",
                 "items": [{
                         "id": 220645001,
                         "name": "설레임게스트하우스",
@@ -3039,7 +2758,7 @@
                         "price": 22000,
                         "lat": 33.4470489,
                         "lng": 126.305842,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EA%B3%BD%EC%A7%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1911454014?c=14059487.8360319,3954900.5011199,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220645/220645001_01.jpg",
@@ -3059,7 +2778,7 @@
                         "price": 80000,
                         "lat": 126.308086,
                         "lng": 33.4529307,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EA%B3%BD%EC%A7%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/13296416?c=14059635.9243505,3955330.4508810,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220645/220645002_01.jpg",
@@ -3080,7 +2799,7 @@
                         "price": 25000,
                         "lat": 33.4446458,
                         "lng": 126.306593,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EA%B3%BD%EC%A7%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1314370182?c=14059361.2323750,3954793.0095050,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220645/220645003_01.jpg",
@@ -3101,7 +2820,7 @@
                         "price": 25000,
                         "lat": 33.4456832,
                         "lng": 126.309908,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EA%B3%BD%EC%A7%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/38325516?c=14059752.9767951,3954919.6061012,15,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220645/220645004_01.jpg",
@@ -3414,10 +3133,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220645018,
                         "name": "팀버하우스",
@@ -3494,7 +3209,7 @@
                         "price": 167465,
                         "lat": 33.4481829,
                         "lng": 126.303887,
-                        "type": 3,
+                        "type": 1,
                         "url": "https://map.naver.com/v5/search/%EA%B3%BD%EC%A7%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%98%B8%ED%85%94/place/1269358860?c=14059135.2760726,3954944.4613022,15,0,0,0,dh&placePath=%3Fentry%253Dpll",
                         "image": [
                             "/ygb/assets/img/main/064/220645/220645021_01.jpg",
@@ -3513,7 +3228,8 @@
             {
                 "id": 220646,
                 "name": "한담해변",
-                "image": "/ygb/assets/img/main/064/064_6.png",
+                "description": "유명 카페와 액티비티를 즐기기 좋은 해변",
+                "image": "/ygb/assets/img/main/064/064_6.jpg",
                 "items": [{
                         "id": 220646001,
                         "name": "포세이돈게스트하우스",
@@ -3521,7 +3237,7 @@
                         "price": 75000,
                         "lat": 33.4624152,
                         "lng": 126.312916,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/451656632?c=14060793.2797005,3956842.9534075,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646001_01.jpg",
@@ -3542,7 +3258,7 @@
                         "price": 12500,
                         "lat": 33.4629089,
                         "lng": 126.314160,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/35386887?c=14060890.0163380,3956994.0317260,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646002_01.jpg",
@@ -3566,7 +3282,7 @@
                         "price": 20000,
                         "lat": 33.4633058,
                         "lng": 126.314189,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/1873542104?c=14060893.6008256,3956992.8441216,17,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646003_01.jpg",
@@ -3588,7 +3304,7 @@
                         "price": 25000,
                         "lat": 33.4636367,
                         "lng": 126.312089,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/1677116552?c=14060502.7692253,3956944.4593523,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646004_01.jpg",
@@ -3610,7 +3326,7 @@
                         "price": 25000,
                         "lat": 33.4642862,
                         "lng": 126.310534,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/1403861475?c=14060406.0214559,3956863.2491877,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646005_01.jpg",
@@ -3633,7 +3349,7 @@
                         "price": 25000,
                         "lat": 33.4593746,
                         "lng": 126.312510,
-                        "type": 1,
+                        "type": 4,
                         "url": "https://map.naver.com/v5/search/%EC%A0%9C%EC%A3%BC%20%ED%95%9C%EB%8B%B4%ED%95%B4%EB%B3%80%20%EA%B2%8C%ED%95%98/place/21290250?c=14060512.3204376,3956472.6984424,16,0,0,0,dh",
                         "image": [
                             "/ygb/assets/img/main/064/220646/220646006_01.jpg",
@@ -3674,10 +3390,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220646008,
                         "name": "한담 낭뜰",
@@ -3699,10 +3411,6 @@
                         "checkin": 1600,
                         "checkout": 1100
                     },
-
-
-
-
                     {
                         "id": 220646009,
                         "name": "한담풍경하우스",
@@ -3753,14 +3461,959 @@
             {
                 "id": 220647,
                 "name": "협재해수욕장",
-                "image": "/ygb/assets/img/main/064/064_7.png",
-                "items": []
+                "description": "비양도가 보이는 에메랄드빛 해수욕장",
+                "image": "/ygb/assets/img/main/064/064_7.jpg",
+                "items": [{
+                        "id": 220647001,
+                        "name": "해조대 펜션",
+                        "time": 3,
+                        "price": 105000,
+                        "lat": 33.3940498,
+                        "lng": 126.240658,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EC%88%99%EC%86%8C/place/38460428?c=14052960.8737241,3947537.4518511,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647001_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647001_07.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647002,
+                        "name": "블루스프링부띠끄호텔",
+                        "time": 4,
+                        "price": 76000,
+                        "lat": 33.3929748,
+                        "lng": 126.240302,
+                        "type": 1,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%98%B8%ED%85%94/place/1335009889?c=14052881.2134965,3947527.1587981,18,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647002_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_09.jpg",
+                            "/ygb/assets/img/main/064/220647/220647002_10.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647003,
+                        "name": "카이리조트",
+                        "time": 6,
+                        "price": 80000,
+                        "lat": 33.3921687,
+                        "lng": 126.241180,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%98%B8%ED%85%94/place/31699389?c=14052886.3898528,3947740.9415210,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647003_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_09.jpg",
+                            "/ygb/assets/img/main/064/220647/220647003_10.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647004,
+                        "name": "르메인호텔 협재",
+                        "time": 11,
+                        "price": 113000,
+                        "lat": 33.3970755,
+                        "lng": 126.244480,
+                        "type": 3,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%98%B8%ED%85%94/place/1107725308?c=14053210.6523975,3948086.7034903,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647004_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647004_07.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647005,
+                        "name": "맨도롱풀하우스 마따니아",
+                        "time": 5,
+                        "price": 120000,
+                        "lat": 33.3941347,
+                        "lng": 126.241259,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/35372761?c=14052784.7551577,3947732.9415975,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647005_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647005_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647005_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647005_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647005_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647005_06.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647006,
+                        "name": "그 바다에 머물다",
+                        "time": 4,
+                        "price": 130000,
+                        "lat": 33.3939005,
+                        "lng": 126.241294,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/61670877?c=14052784.7551577,3947732.9415975,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647006_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647006_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647007,
+                        "name": "제주위너 펜션",
+                        "time": 6,
+                        "price": 50000,
+                        "lat": 33.3947952,
+                        "lng": 126.241651,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/21765120?c=14052898.8131080,3947722.1950424,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647007_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647007_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647007_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647007_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647007_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647007_06.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647008,
+                        "name": "바다아리펜션",
+                        "time": 7,
+                        "price": 100000,
+                        "lat": 33.3954026,
+                        "lng": 126.242194,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/541722524?c=14052898.8131080,3947722.1950424,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647008_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647008_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647008_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647008_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647008_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647008_06.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647009,
+                        "name": "협재비엔비37",
+                        "time": 9,
+                        "price": 200000,
+                        "lat": 33.3936677,
+                        "lng": 126.244509,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/34321446?c=14052971.4156799,3947979.9017808,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647009_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647009_09.jpg"
+                        ],
+                        "checkin": 1530,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647010,
+                        "name": "달시",
+                        "time": 10,
+                        "price": 200000,
+                        "lat": 33.3954289,
+                        "lng": 126.243548,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/567147034?c=14053029.9363362,3947915.4078919,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647010_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647010_07.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647011,
+                        "name": "breaTH",
+                        "time": 10,
+                        "price": 320000,
+                        "lat": 33.3974079,
+                        "lng": 126.242811,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1356511120?c=14053043.0831680,3948100.5304503,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647011_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647011_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647012,
+                        "name": "바다에서잘래펜션",
+                        "time": 12,
+                        "price": 70590,
+                        "lat": 33.3981685,
+                        "lng": 126.243352,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/37491046?c=14053043.0831680,3948100.5304503,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647012_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_09.jpg",
+                            "/ygb/assets/img/main/064/220647/220647012_10.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647013,
+                        "name": "어랭이",
+                        "time": 13,
+                        "price": 240000,
+                        "lat": 33.3983118,
+                        "lng": 126.244662,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/21369408?c=14053043.0831680,3948100.5304503,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647013_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647013_09.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647014,
+                        "name": "엔게디하우스",
+                        "time": 13,
+                        "price": 105000,
+                        "lat": 33.3984286,
+                        "lng": 126.244597,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/899655826?c=14053043.0831680,3948100.5304503,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647014_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647014_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1030
+                    },
+
+                    {
+                        "id": 220647015,
+                        "name": "라라스테이",
+                        "time": 15,
+                        "price": 143000,
+                        "lat": 33.3991814,
+                        "lng": 126.245343,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1112065254?c=14052626.6592169,3948181.7458394,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647015_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647015_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647016,
+                        "name": "협제주스테이",
+                        "time": 15,
+                        "price": 109000,
+                        "lat": 33.3990663,
+                        "lng": 126.245677,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1036367122?c=14053509.9793763,3948474.1312872,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647016_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647016_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647017,
+                        "name": "마로펜션",
+                        "time": 15,
+                        "price": 78000,
+                        "lat": 33.3984035,
+                        "lng": 126.246403,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/entry/place/35150549?c=14053526.2542859,3948391.8737998,18,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647017_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647017_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647017_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647017_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647017_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647017_06.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647018,
+                        "name": "협재게스트하우스 민박",
+                        "time": 7,
+                        "price": 22000,
+                        "lat": 33.3945598,
+                        "lng": 126.241492,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/34648383?c=14052856.3669861,3947418.5623119,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647018_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647018_07.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647019,
+                        "name": "바당다레",
+                        "time": 5,
+                        "price": 50000,
+                        "lat": 33.3923947,
+                        "lng": 126.239802,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1215033680?c=14052594.7995786,3947409.0160028,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647019_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647019_09.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647020,
+                        "name": "협재서쪽게스트하우스",
+                        "time": 5,
+                        "price": 60000,
+                        "lat": 33.3924841,
+                        "lng": 126.241155,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1473033343?c=14052621.4828606,3947816.2744044,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647020_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_09.jpg",
+                            "/ygb/assets/img/main/064/220647/220647020_10.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1030
+                    },
+
+                    {
+                        "id": 220647021,
+                        "name": "쉬멍놀멍",
+                        "time": 8,
+                        "price": 35000,
+                        "lat": 33.3925198,
+                        "lng": 126.244036,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1760704073?c=14052532.3048165,3947847.3276948,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647021_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647021_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647022,
+                        "name": "1미리 게스트하우스",
+                        "time": 9,
+                        "price": 35000,
+                        "lat": 33.3934733,
+                        "lng": 126.242211,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1898344158?c=14052826.1103485,3947528.4520957,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647022_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647022_07.jpg"
+                        ],
+                        "checkin": 1700,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647023,
+                        "name": "파티게스트하우스 문어오빠",
+                        "time": 11,
+                        "price": 30000,
+                        "lat": 33.3958754,
+                        "lng": 126.244318,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1758440697?c=14052663.6840795,3947729.0883031,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647023_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647023_07.jpg"
+                        ],
+                        "checkin": 1700,
+                        "checkout": 1000
+                    },
+
+                    {
+                        "id": 220647024,
+                        "name": "협재마당게스트하우스",
+                        "time": 12,
+                        "price": 30000,
+                        "lat": 33.3964451,
+                        "lng": 126.244593,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/516095874?c=14052663.6840795,3947729.0883031,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647024_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647024_07.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1000
+                    },
+
+                    {
+                        "id": 220647025,
+                        "name": "해피홈협재게스트하우스",
+                        "time": 14,
+                        "price": 25000,
+                        "lat": 33.3971587,
+                        "lng": 126.244812,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1281026421?c=14052663.6840795,3947729.0883031,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647025_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647025_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647025_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647025_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647025_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647025_06.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647026,
+                        "name": "동행in협재",
+                        "time": 11,
+                        "price": 30000,
+                        "lat": 33.3977170,
+                        "lng": 126.243227,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1888386072?c=14052681.1946354,3948018.1156127,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647026_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647026_09.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1000
+                    },
+
+                    {
+                        "id": 220647027,
+                        "name": "제주기역",
+                        "time": 11,
+                        "price": 35000,
+                        "lat": 33.3975871,
+                        "lng": 126.242626,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1441485441?c=14052681.1946354,3948018.1156127,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647027_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647027_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220647028,
+                        "name": "협재정류장",
+                        "time": 12,
+                        "price": 30000,
+                        "lat": 33.3973894,
+                        "lng": 126.244219,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1453784541?c=14052681.1946354,3948018.1156127,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647028_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_08.jpg",
+                            "/ygb/assets/img/main/064/220647/220647028_09.jpg"
+                        ],
+                        "checkin": 1700,
+                        "checkout": 1000
+                    },
+
+                    {
+                        "id": 220647029,
+                        "name": "하티게스트하우스",
+                        "time": 13,
+                        "price": 30000,
+                        "lat": 33.3985212,
+                        "lng": 126.243521,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/37009204?c=14052681.1946354,3948018.1156127,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647029_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647029_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647029_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647029_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647029_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647029_06.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1000
+                    },
+
+                    {
+                        "id": 220647030,
+                        "name": "협재 오라게",
+                        "time": 15,
+                        "price": 20000,
+                        "lat": 33.3992256,
+                        "lng": 126.246675,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%ED%98%91%EC%9E%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/1862746698?c=14052681.1946354,3948018.1156127,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220647/220647030_01.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_02.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_03.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_04.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_05.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_06.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_07.jpg",
+                            "/ygb/assets/img/main/064/220647/220647030_08.jpg"
+                        ],
+                        "checkin": 1700,
+                        "checkout": 1100
+                    }
+                ]
             },
             {
                 "id": 220648,
                 "name": "금능해수욕장",
-                "image": "/ygb/assets/img/main/064/064_8.png",
-                "items": []
+                "description": "‘우리들의 블루스’ 촬영지, 아름다운 제주 바다",
+                "image": "/ygb/assets/img/main/064/064_8.jpg",
+                "items": [{
+                        "id": 220648001,
+                        "name": "금능 이큐 스테이",
+                        "time": 15,
+                        "price": 40000,
+                        "lat": 33.3852840,
+                        "lng": 126.230030,
+                        "type": 1,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%98%B8%ED%85%94/place/1043568467?c=14051591.8554944,3946845.7443539,15,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648001_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648001_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648002,
+                        "name": "그린비치",
+                        "time": 5,
+                        "price": 43000,
+                        "lat": 33.3889442,
+                        "lng": 126.232911,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/11656407?c=14051683.8499216,3947199.3058412,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648002_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648002_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220648003,
+                        "name": "코이노니아",
+                        "time": 9,
+                        "price": 130000,
+                        "lat": 33.3886091,
+                        "lng": 126.231215,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1966615242?c=14051683.8499216,3947199.3058412,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648003_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648003_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220648004,
+                        "name": "지금여기에",
+                        "time": 8,
+                        "price": 94400,
+                        "lat": 33.3893322,
+                        "lng": 126.231510,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1300135361?c=14051683.8499216,3947199.3058412,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648004_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648004_08.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+                    {
+                        "id": 220648005,
+                        "name": "장수곳 오션뷰 바닷가 커플 가족 펜션",
+                        "time": 10,
+                        "price": 150000,
+                        "lat": 33.3940498,
+                        "lng": 126.240658,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1197100032?c=14051689.8166463,3946819.5066524,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648005_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648005_07.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648006,
+                        "name": "원담 바이 에퀴녹스",
+                        "time": 12,
+                        "price": 80000,
+                        "lat": 33.3896444,
+                        "lng": 126.229519,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1366190968?c=14051751.6323595,3946812.6405970,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648006_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648006_07.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648007,
+                        "name": "으뜸원펜션",
+                        "time": 12,
+                        "price": 67000,
+                        "lat": 33.3883352,
+                        "lng": 126.229208,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1406132634?c=14051619.0619779,3947003.1318133,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648007_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_08.jpg",
+                            "/ygb/assets/img/main/064/220648/220648007_09.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648008,
+                        "name": "제주만석이펜션",
+                        "time": 13,
+                        "price": 80000,
+                        "lat": 33.3866919,
+                        "lng": 126.230265,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%ED%8E%9C%EC%85%98/place/1203009236?c=14051709.2307655,3946755.3125264,17,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648008_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648008_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648009,
+                        "name": "콩콩하우스 키즈풀빌라",
+                        "time": 10,
+                        "price": 420000,
+                        "lat": 33.3871601,
+                        "lng": 126.231626,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/entry/place/1115111934?c=14051612.2492251,3946729.3283385,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648009_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_08.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_09.jpg",
+                            "/ygb/assets/img/main/064/220648/220648009_10.jpg"
+
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1100
+                    },
+
+
+                    {
+                        "id": 220648010,
+                        "name": "유지공간",
+                        "time": 13,
+                        "price": 30000,
+                        "lat": 33.3856275,
+                        "lng": 126.231639,
+                        "type": 2,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/36668062?c=14051548.6524000,3946772.2709401,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648010_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_07.jpg",
+                            "/ygb/assets/img/main/064/220648/220648010_08.jpg"
+                        ],
+                        "checkin": 1600,
+                        "checkout": 1030
+                    },
+
+
+                    {
+                        "id": 220648011,
+                        "name": "금능마린게스트하우스",
+                        "time": 10,
+                        "price": 20000,
+                        "lat": 33.3874916,
+                        "lng": 126.231279,
+                        "type": 4,
+                        "url": "https://map.naver.com/v5/search/%EA%B8%88%EB%8A%A5%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EC%9A%B0%EC%8A%A4/place/21764790?c=14051548.6524000,3946772.2709401,16,0,0,0,dh",
+                        "image": [
+                            "/ygb/assets/img/main/064/220648/220648011_01.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_02.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_03.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_04.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_05.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_06.jpg",
+                            "/ygb/assets/img/main/064/220648/220648011_07.jpg"
+                        ],
+                        "checkin": 1500,
+                        "checkout": 1000
+                    }
+                ]
             }
         ]
     }, {

@@ -1,11 +1,11 @@
 /* global kakao */
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import {GrClose} from "react-icons/gr"
+import { GrFormClose } from "react-icons/gr";
 
+const { kakao } = window;
 
 const Map = ({ lat, lng, setShowMap }) => {
-  const { kakao } = window;
   console.log(kakao);
   useEffect(() => {
     let container = document.getElementById("map");
@@ -31,10 +31,19 @@ const Map = ({ lat, lng, setShowMap }) => {
 
   return (
     <MapViewEl>
-      <div id="bg" onClick={() => {setShowMap(false)}}></div>
+      <div className="map-bar">
+        <h1>지도</h1>
+        <button className="close-btn">
+          <GrFormClose
+            size="30"
+            onClick={() => {
+              setShowMap(false);
+            }}
+          />
+        </button>
+      </div>
       <div className="map-area">
         <div id="map"></div>
-        <GrClose onClick={() => {setShowMap(false)}}/>
       </div>
     </MapViewEl>
   );
@@ -47,42 +56,54 @@ const MapViewEl = styled.div`
   display: block;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
-  .map-area {
-    position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    display: block;
-    border: 5px solid #A6DBE1;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    svg {
-      position: absolute;
-      z-index: 1;      
-      bottom: -30%;
-      right: 50%;
-      transform:translateX(50%);
-      height: 1.5rem;
-      width: 1.5rem;
+  z-index: 99999;
+  background-color: #eee;
+  .map-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #e5e5ec;
+    padding: 0 12.5%;
+    @media screen and (max-width: 480px) {
+      padding: 0;
+    }
+    h1 {
+      position:absolute;
+      display:block:
+      flex:none;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      font-size: 2rem;
+    }
+    .close-btn {
+      position:relative;
+      z-index: 1;
+      margin-right: 20px;
+      border: none;
+      background-color: transparent;
       path {
-        stroke: white;
+        stroke: #000;
       }
     }
+  }
+  .map-area {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 12.5%;
+    @media screen and (max-width: 480px) {
+      padding: 0;
+    }
     #map {
+      position: relative;
       width: 100%;
-      border-radius: 50%;
       height: 100%;
     }
   }
-  
-  #bg {
-      position:relative;
-      display:block;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,.5);
-  }
-`
+`;
 export default Map;

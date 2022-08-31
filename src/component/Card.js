@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { HiLocationMarker } from "react-icons/hi";
-import { BiImages, BiWalk } from "react-icons/bi";
+import { RiMapPinLine } from "react-icons/ri";
+import { IoIosArrowForward } from "react-icons/io";
+import SkeletonCard from "../component/SkeletonCard";
 
 import MapView from "../pages/MapView";
 import PhotoView from "./PhotoView";
 
-const Card = ({ item, count_5m, count_10m, count_15m }) => {
+const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
   const [showImg, setShowImg] = useState(false);
+  const [loading, setLoading] = useState(true);
   const isShowMap = () => {
     setShowMap(true);
   };
@@ -29,213 +31,200 @@ const Card = ({ item, count_5m, count_10m, count_15m }) => {
     else return `${_price.toLocaleString("ko-KR")} 원 ~`;
   };
   return (
-    <CardEl>
-      {/* <span id="time">
-        도보
-        <em style={{ fontStyle: "normal", color: "red" }}> {item.time} </em>
-        분 내 위치
-        <BiWalk size="25" color="#000" />
-      </span> */}
-      {count_5m ? (
-        <h1>
-          도보 <span>5</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      {count_10m ? (
-        <h1>
-          도보 <span>10</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      {count_15m ? (
-        <h1>
-          도보 <span>15</span> 분 내 위치
-        </h1>
-      ) : (
-        ""
-      )}
-      <div className="info">
-        <div className="info-left">
-          <img src={item.image[0]} alt="thumbnail" onClick={isShowImg} />
-          <BiImages size="30" color="#ccc" onClick={isShowImg} />
-          <div className="check-time">
+    <>
+      <CardEl>
+      {loading ? <SkeletonCard /> : ""}
+        <div className="card-top">
+          <img
+            className="card-img"
+            src={item.image[0]}
+            alt="thumbnail"
+            onLoad={() => setLoading(false)}
+          />
+          <button className="img-btn" onClick={isShowImg}>
+            <img src="/ygb/img.png"></img>
+          </button>
+        </div>
+        <div className="card-info">
+          <strong className="card-name">{item.name}</strong>
+          <div className="card-check">
             <span className="tag">체크인</span>
-            <span>{time(item.checkin)}</span>
+            <span> : {time(item.checkin)}</span>
+            {" | "}
+            <span className="tag"> 체크아웃</span>
+            <span> : {time(item.checkout)}</span>
           </div>
-          <div className="check-time">
-            <span className="tag">체크아웃</span>
-            <span>{time(item.checkout)}</span>
+          <button className="card-locate" onClick={isShowMap}>
+            <RiMapPinLine color="#205CFF" size="22px" />
+            상세 위치 보기
+          </button>
+          <div className="price">
+            <span className="tag">최저가 </span>
+            <em style={{ fontStyle: "normal" }}>{price(item.price)}</em>{" "}
           </div>
         </div>
+
         <div className="info-right">
-          <strong id="name">{item.name}</strong>
-          <span className="locate" onClick={isShowMap}>
-            <HiLocationMarker />
-            상세 위치 보기
-            {/* 도보 {item.time} 분 도착 */}
-          </span>
           {showMap ? (
             <MapView setShowMap={setShowMap} lat={item.lat} lng={item.lng} />
           ) : null}
           {showImg ? <PhotoView setShowImg={setShowImg} item={item} /> : null}
-          <span className="price">
-            <span
-              className="tag"
-            >
-              최저가
-            </span>
-            <em style={{ fontStyle: "normal" }}>{price(item.price)}</em>{" "}
-          </span>
-          <button
-            className="move"
-            onClick={() => window.open(item.url, "_blank")}
-          >
-            실시간 가격 보기
-          </button>
         </div>
-      </div>
-    </CardEl>
+        <button
+          className="move"
+          onClick={() => window.open(item.url, "_blank")}
+        >
+          <span>실시간 가격 보기</span>
+          <IoIosArrowForward size="22px" />
+        </button>
+      </CardEl>
+    </>
   );
 };
 
 // styled-components
 const CardEl = styled.div`
+  @keyframes loading {
+    0% {
+      transform: translateX(0);
+    }
+    50%,
+    100% {
+      transform: translateX(100%);
+    }
+  }
   position: relative;
-  font-weight: bold;
-  padding-bottom: 10%;
-  h1 {
-    position:relative;
-    padding: 10% 20px;
-    padding-bottom: 0;
-    text-align: center;
-    border-top: 2px solid #eee;
-    font-size: 1.5rem;
-    color: #000;
-    span {
-      font-size: 2rem;
-      color: #00baca;
-      font-weight: bold;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.08);
+  @media screen and (max-width: 1024px) {
+    .card-top,
+    .skeleton-img {
+      height: 218px !important;
     }
-  }
-  .tag {
-    background-color: #eee;
-    color: #777;
-    padding: 2px 7px;
-    font-size: 1rem;
-    border-radius: 5px;
-  }
-  #time {
-    position:relative;
-    display:inline-block;
-    padding: 10px 10px 10px 30px;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    svg {
-      position:absolute;
-      display:block;
-      top:45%;
-      left: 0px;
-      transform:translateY(-50%);
-    }
-  }
-  .info {
-    display: flex;
-    padding-top: 10%;
-    margin-bottom: 5%;
-    .info-left {
-      flex-shrink: 0;
-      position: relative;
-      margin-right: 10%;
-      > img {
-        border-radius: 5px;
-        width: 130px;
-        height: 130px;
-        margin-bottom: 20%;
-        object-fit: cover;
+    .card-info {
+      padding: 20px !important;
+      .card-locate {
+        margin: 0 0 0 auto !important;
+        border: none !important;
       }
-      > svg {
-        position: absolute;
-        display: block;
-        top: 100px;
-        right: 0;
-        padding: 3px;
-        border-radius: 5px;
-        background-color: rgba(0,0,0,.5);
-        &::before {
-          content:''
-          position:absolute;
-          display:block;
-          width: 24px;
-          height: 24px;
-        }
-      }
-      .check-time {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        color: #777;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-    }
-    .info-right {
-      flex-grow: 1;
-      font-weight: bold;
-      #name {
-        font-size: 1.7rem;
-        height: 60px;
-        overflow: hidden;
-        margin-bottom: 10%;
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-      }
-      .locate {
-        position: relative;
-        display: block;
-        padding-left: 30px;
-        margin-bottom: 10%;
-        font-size: 0.8rem;
-        font-family: auto;
-        font-weight: 600;
-        color: #007aff;
-        svg {
-          position: absolute;
-          left: 0;
-          top: -8px;
-          width: 2em;
-          height: 2em;
-        }
-      }
-      .price {
-        position: relative;
-        margin-bottom: 10%;
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.6rem;
-        align-items: center;
-        white-space: nowrap;
-      }
-      .move {
-        width: 100%;
-        height: 50px;
-        border: 0;
-        border-radius: 5px;
-        background-color: #00baca;
-        color: #fff;
-        font-weight: bold;
-        font-size: 1.5rem;
-        font-family: 'GangwonEdu_OTFBoldA';
+      .card-name {
+        height: 40px !important;
       }
     }
   }
-  
-  
-`;
+  @media screen and (max-width: 768px) {
+    .card-top,
+    .skeleton-img {
+      height: 200px !important;
+    }
+    .card-info {
+      padding: 15px !important;
+    }
+  }
+  .card-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 236px;
+    overflow: hidden;
+    .card-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    button {
+      position: absolute;
+      display: block;
+      right: 20px;
+      bottom: 16px;
+      width: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      border-radius: 2px;
+      height: 40px;
+      border: 0;
+      z-index: 1;
+    }
+  }
+  .skeleton-img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 236px;
+    background: linear-gradient(90deg, #e9e9ed 0%, #ffffffae 30%, #e9e9ed 60%);
+    animation: loading 1.5s infinite linear;
+  }
 
+  .card-info {
+    position: relative;
+    display: block;
+    padding: 24px;
+    .card-name {
+      position: relative;
+      display: block;
+      margin-bottom: 3%;
+      font-size: 2rem;
+    }
+    .card-check {
+      position: relative;
+      display: block;
+      font-size: 1.6rem;
+      font-family: "Pretendard-Regular";
+      color: #e5e5ec;
+      span {
+        color: #767676;
+      }
+      .tag {
+        color: #000;
+      }
+    }
+    .card-locate {
+      position: relative;
+      display: flex;
+      font-family: "Pretendard-SemiBold";
+      align-items: center;
+      height: 36px;
+      padding: 0 10px;
+      font-size: 1.4rem;
+      margin: 3% 0 3% auto;
+      border: 1px solid #e5e5ec;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #205cff;
+      svg {
+        margin-right: 8px;
+      }
+    }
+    .price {
+      text-align: right;
+      font-size: 1.6rem;
+      font-family: "Pretendard-Regular";
+      em {
+        font-family: "Pretendard-ExtraBold";
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .move {
+    position: relative;
+    display: flex;
+    font-family: "Pretendard-Bold";
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    border: 0;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #00c2d6;
+    svg {
+      margin-left: 5px;
+    }
+  }
+`;
 export default Card;

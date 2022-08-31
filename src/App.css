@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     /* outline-style: none; */
+    -webkit-tap-highlight-color : transparent !important;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
 }
 
 a {
@@ -21,12 +27,23 @@ img {
 .container {
     position: relative;
     display: block;
-    max-width: 390px;
-    height:100vh;
+    max-width: 1280px;
     margin: 0 auto;
 }
 html {
-    background-color: #eefeff;
+    font-size: 10px;
+}
+body {
+}
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
 }
 @font-face {
     font-family: 'SF_IceMango';
@@ -35,16 +52,36 @@ html {
     font-style: normal;
 }
 @font-face {
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
-.logo {
-    position:relative;display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'SF_IceMango';
-    font-size: 2.5rem;
-    color: #fff;
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+button {
+    cursor: pointer;
+    font-family: 'Pretendard-SemiBold';
 }
