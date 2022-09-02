@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ygb/static/css/main.3cacfa4e.css",
+    "main.js": "/ygb/static/js/main.16ea0f4f.js",
+    "index.html": "/ygb/index.html",
+    "main.3cacfa4e.css.map": "/ygb/static/css/main.3cacfa4e.css.map",
+    "main.16ea0f4f.js.map": "/ygb/static/js/main.16ea0f4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cacfa4e.css",
+    "static/js/main.16ea0f4f.js"
+  ]
+}
