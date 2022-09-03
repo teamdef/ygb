@@ -4,7 +4,7 @@ import { RiMapPinLine } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
 import SkeletonCard from "../component/SkeletonCard";
 
-import MapView from "../pages/MapView";
+import MapView from "./MapView";
 import PhotoView from "./PhotoView";
 
 const Card = ({ item }) => {
@@ -34,14 +34,14 @@ const Card = ({ item }) => {
     <>
       <CardEl>
       {loading ? <SkeletonCard /> : ""}
-        <div className="card-top">
+        <div className="card-top" onClick={isShowImg}>
           <img
             className="card-img"
             src={item.image[0]}
             alt="thumbnail"
             onLoad={() => setLoading(false)}
           />
-          <button className="img-btn" onClick={isShowImg}>
+          <button className="img-btn">
             <img src="/ygb/img.png"></img>
           </button>
         </div>
@@ -74,7 +74,7 @@ const Card = ({ item }) => {
           className="move"
           onClick={() => window.open(item.url, "_blank")}
         >
-          <span>실시간 가격 보기</span>
+          <span>숙소 정보 확인하기</span>
           <IoIosArrowForward size="22px" />
         </button>
       </CardEl>
@@ -111,9 +111,6 @@ const CardEl = styled.div`
         margin: 0 0 0 auto !important;
         border: none !important;
       }
-      .card-name {
-        height: 40px !important;
-      }
     }
   }
   @media screen and (max-width: 768px) {
@@ -131,6 +128,7 @@ const CardEl = styled.div`
     width: 100%;
     height: 236px;
     overflow: hidden;
+    cursor: pointer;
     .card-img {
       position: absolute;
       width: 100%;
@@ -166,9 +164,13 @@ const CardEl = styled.div`
     padding: 24px;
     .card-name {
       position: relative;
-      display: block;
+      display: -webkit-box;
       margin-bottom: 3%;
       font-size: 2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
     .card-check {
       position: relative;

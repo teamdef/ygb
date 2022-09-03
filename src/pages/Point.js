@@ -1,38 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { changeDetail } from "../reducers/detailReducer";
+import SkeletonPoint from "../component/SkeletonPoint";
+
 const Point = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.value);
   const { detail } = useSelector((state) => state.detail);
-  const detailList = Data.region[value].detail.map((detail, index) => (
-    <Link
-      to={`${detail.id}`}
-      className="card"
-      key={detail.id}
-      state={3}
-      onClick={() => {
-        window.scrollTo({
-          top: 0,
-        });
-        dispatch(changeDetail(Data.region[value].detail[index]));
-      }}
-    >
-      <img src={detail.image} alt="여행지이미지" />
-      <div className="card-txt">
-        <h2 className="card-title">{detail.name}</h2>
-        <p className="card-desc">
-          {detail.description}
-        </p>
-      </div>
-    </Link>
-  ));
-  console.log(value);
-  console.log(detail);
+  const [loading, setLoading] = useState(true);
+  const detailList = Data.region[value].detail.map(function (detail, index) {
+    return (
+      <Link
+        to={`${detail.id}`}
+        className="card"
+        key={detail.id}
+        state={3}
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+          });
+          dispatch(changeDetail(Data.region[value].detail[index]));
+        }}
+      >
+        <img src={detail.image} alt="여행지이미지" />
+        <div className="card-txt">
+          <h2 className="card-title">{detail.name}</h2>
+          <p className="card-desc">{detail.description}</p>
+        </div>
+      </Link>
+    );
+  });
+  console.log(Data.region[value].detail.length);
   return (
     <TemplateEl className="Template">
       <div className="detail">
@@ -47,7 +49,10 @@ const Point = () => {
         <div className="detail-main">
           <div className="container">
             <h2 className="title">인기있는 관광지에요</h2>
-            <div className="card-wrap">{detailList}</div>
+            {/* {loading ? <SkeletonPoint length={Data.region[value].detail.length}/> : ""} */}
+            <div className="card-wrap" onLoad={() => setLoading(false)}>
+              {detailList}
+            </div>
           </div>
         </div>
       </div>
