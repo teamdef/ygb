@@ -40,7 +40,7 @@ const Header = () => {
     <HeaderEl ref={header}>
       <div className="container">
         <Link to="/" className="logo">
-          <img src="/ygb/logo.png"></img>
+          <img src="/logo.png"></img>
         </Link>
       </div>
     </HeaderEl>

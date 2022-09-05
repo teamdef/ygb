@@ -42,7 +42,7 @@ const Card = ({ item }) => {
             onLoad={() => setLoading(false)}
           />
           <button className="img-btn">
-            <img src="/ygb/img.png"></img>
+            <img src="/img.png"></img>
           </button>
         </div>
         <div className="card-info">
