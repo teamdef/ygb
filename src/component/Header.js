@@ -19,6 +19,9 @@ const Header = () => {
         window.removeEventListener("scroll", isScroll);
       };
     }
+    else {
+      header.current.classList.remove("scroll");
+    }
   });
   const isScroll = () => {
     if (window.pageYOffset >= 80) {
