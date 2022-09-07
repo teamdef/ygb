@@ -8,7 +8,6 @@ const initialState = {
 export default function categoryReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_CATEGORY: {
-      console.log(action.value);
       return {
         ...state,
         value: action.value,

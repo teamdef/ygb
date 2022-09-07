@@ -59,10 +59,9 @@ const Point = () => {
 
 // styled-components
 const TemplateEl = styled.div`
-padding-top: 80px;
-padding-bottom: 10%;
-min-height:calc(100vh - 150px);
-  // 애니메이션
+  padding-top: 80px;
+  padding-bottom: 10%;
+  min-height:calc(100vh - 150px);
   @keyframes UP {
     0% {
       opacity: 0;
@@ -73,7 +72,6 @@ min-height:calc(100vh - 150px);
       opacity: 1;
     }
   }
-  // detail (2 페이지)
   .detail {
     .detail-name {
       position:relative;
@@ -153,7 +151,6 @@ min-height:calc(100vh - 150px);
       }
     }
   }
-  // detail (1024px)
   @media screen and (max-width: 1024px) {
     .detail-name {
       height:140px !important;

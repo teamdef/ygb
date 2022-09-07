@@ -6,7 +6,6 @@ import { GrFormClose } from "react-icons/gr";
 const { kakao } = window;
 
 const Map = ({ lat, lng, setShowMap }) => {
-  console.log(kakao);
   useEffect(() => {
     let container = document.getElementById("map");
     let options = {
@@ -15,8 +14,6 @@ const Map = ({ lat, lng, setShowMap }) => {
     };
 
     let map = new window.kakao.maps.Map(container, options);
-    console.log(lat);
-    console.log(lng);
     //마커가 표시 될 위치
     let markerPosition = new kakao.maps.LatLng(lat, lng);
 
