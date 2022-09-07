@@ -5,12 +5,10 @@ import Data from "../data.json";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { changeDetail } from "../reducers/detailReducer";
-import SkeletonPoint from "../component/SkeletonPoint";
 
 const Point = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.value);
-  const { detail } = useSelector((state) => state.detail);
   const [loading, setLoading] = useState(true);
   const detailList = Data.region[value].detail.map(function (detail, index) {
     return (
@@ -34,7 +32,6 @@ const Point = () => {
       </Link>
     );
   });
-  console.log(Data.region[value].detail.length);
   return (
     <TemplateEl className="Template">
       <div className="detail">

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
-import Card from "../component/Card";
+import Card from "../component/room/Card";
 import { TiWarningOutline } from "react-icons/ti";
 import { useSelector } from "react-redux";
 
@@ -85,7 +85,6 @@ const Room = () => {
     }
     // 절대좌표 구하기 현재 스크롤된 좌표 + 뷰 포트 내 해당 dom y 좌표 !!!
   };
-  console.log(detail);
   return (
     <RoomListLayout ref={room}>
       <nav className="nav">

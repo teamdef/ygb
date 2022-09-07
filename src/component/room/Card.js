@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { RiMapPinLine } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
-import SkeletonCard from "../component/SkeletonCard";
+import SkeletonCard from "./SkeletonCard";
 
 import MapView from "./MapView";
 import PhotoView from "./PhotoView";
