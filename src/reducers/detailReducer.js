@@ -8,7 +8,6 @@ const initialState = {
 export default function detailReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_DETAIL: {
-      console.log(action.detail);
       return {
         ...state,
         detail: action.detail,

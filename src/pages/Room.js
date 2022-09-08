@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
-import Card from "../component/Card";
+import Card from "../component/room/Card";
 import { TiWarningOutline } from "react-icons/ti";
 import { useSelector } from "react-redux";
 
@@ -63,17 +63,17 @@ const Room = () => {
     })
     .map((item) => <Card item={item} key={item.id} />);
 
-    /** 도보 거리 별 섹션 스크롤 진입 함수 */
+  /** 도보 거리 별 섹션 스크롤 진입 함수 */
   const isScroll = () => {
     // current 배열에서 null 제거해주는 작업 진행 해야할 듯..!
     sections.current.forEach((element, index) => {
       if (element != null) {
-        if (48 >= element.getBoundingClientRect().top) {
+        if (50 > element.getBoundingClientRect().top) {
           sections_nav.current[index].classList.add("active");
-        } else if (48 < element.getBoundingClientRect().top) {
+        } else if (50 <= element.getBoundingClientRect().top) {
           sections_nav.current[index].classList.remove("active");
         }
-        if (48 > element.getBoundingClientRect().bottom) {
+        if (50 > element.getBoundingClientRect().bottom) {
           sections_nav.current[index].classList.remove("active");
         }
       }
@@ -85,7 +85,6 @@ const Room = () => {
     }
     // 절대좌표 구하기 현재 스크롤된 좌표 + 뷰 포트 내 해당 dom y 좌표 !!!
   };
-  console.log(detail);
   return (
     <RoomListLayout ref={room}>
       <nav className="nav">
@@ -168,7 +167,8 @@ const Room = () => {
                           window.scrollTo({
                             top:
                               window.pageYOffset +
-                              sections.current[0].getBoundingClientRect().top,
+                              sections.current[0].getBoundingClientRect().top -
+                              48,
                             behavior: "smooth",
                           });
                         }}
@@ -176,7 +176,7 @@ const Room = () => {
                           (sections_nav.current[0] = section_nav)
                         }
                       >
-                        {detail.car ? '차량' : '도보'} 5분 내
+                        {detail.car ? "차량" : "도보"} 5분 내
                       </button>
                     </li>
                   ) : (
@@ -189,7 +189,8 @@ const Room = () => {
                           window.scrollTo({
                             top:
                               window.pageYOffset +
-                              sections.current[1].getBoundingClientRect().top,
+                              sections.current[1].getBoundingClientRect().top -
+                              48,
                             behavior: "smooth",
                           });
                         }}
@@ -197,7 +198,7 @@ const Room = () => {
                           (sections_nav.current[1] = section_nav)
                         }
                       >
-                        {detail.car ? '차량' : '도보'} 6~10분 내
+                        {detail.car ? "차량" : "도보"} 6~10분 내
                       </button>
                     </li>
                   ) : (
@@ -210,7 +211,8 @@ const Room = () => {
                           window.scrollTo({
                             top:
                               window.pageYOffset +
-                              sections.current[2].getBoundingClientRect().top,
+                              sections.current[2].getBoundingClientRect().top -
+                              48,
                             behavior: "smooth",
                           });
                         }}
@@ -218,7 +220,7 @@ const Room = () => {
                           (sections_nav.current[2] = section_nav)
                         }
                       >
-                        {detail.car ? '차량' : '도보'} 11~15분 내
+                        {detail.car ? "차량" : "도보"} 11~15분 내
                       </button>
                     </li>
                   ) : (
@@ -229,7 +231,7 @@ const Room = () => {
               {distance_5 != 0 ? (
                 <section ref={(section) => (sections.current[0] = section)}>
                   <h2 className="distance">
-                    {detail.car ? '차량' : '도보'} <b>5분</b> 내 위치 숙소
+                    {detail.car ? "차량" : "도보"} <b>5분</b> 내 위치 숙소
                   </h2>
                   <div className="card-wrap">{distance_5}</div>
                 </section>
@@ -239,7 +241,7 @@ const Room = () => {
               {distance_10 != 0 ? (
                 <section ref={(section) => (sections.current[1] = section)}>
                   <h2 className="distance">
-                    {detail.car ? '차량' : '도보'} <b>10분</b> 내 위치 숙소
+                    {detail.car ? "차량" : "도보"} <b>10분</b> 내 위치 숙소
                   </h2>
                   <div className="card-wrap">{distance_10}</div>
                 </section>
@@ -249,7 +251,7 @@ const Room = () => {
               {distance_15 != 0 ? (
                 <section ref={(section) => (sections.current[2] = section)}>
                   <h2 className="distance">
-                    {detail.car ? '차량' : '도보'} <b>15분</b> 내 위치 숙소
+                    {detail.car ? "차량" : "도보"} <b>15분</b> 내 위치 숙소
                   </h2>
                   <div className="card-wrap">{distance_15}</div>
                 </section>

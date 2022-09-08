@@ -5,7 +5,8 @@
         "open": true,
         "image": "/assets/img/main/main_1.jpeg",
         "banner": "/assets/img/main/main_1_banner.png",
-        "detail": [{
+        "detail": [
+            {
                 "id": 220649,
                 "name": "제주국제공항",
                 "description": "친절한 공항, 다시 찾고 싶은 공항",

@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { changeDetail } from "../reducers/detailReducer";
-import SkeletonPoint from "../component/SkeletonPoint";
 
 const Point = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.value);
-  const { detail } = useSelector((state) => state.detail);
-  const [loading, setLoading] = useState(true);
   const detailList = Data.region[value].detail.map(function (detail, index) {
     return (
       <Link
@@ -34,7 +31,6 @@ const Point = () => {
       </Link>
     );
   });
-  console.log(Data.region[value].detail.length);
   return (
     <TemplateEl className="Template">
       <div className="detail">
@@ -49,8 +45,7 @@ const Point = () => {
         <div className="detail-main">
           <div className="container">
             <h2 className="title">인기있는 관광지에요</h2>
-            {/* {loading ? <SkeletonPoint length={Data.region[value].detail.length}/> : ""} */}
-            <div className="card-wrap" onLoad={() => setLoading(false)}>
+            <div className="card-wrap">
               {detailList}
             </div>
           </div>
@@ -62,10 +57,9 @@ const Point = () => {
 
 // styled-components
 const TemplateEl = styled.div`
-padding-top: 80px;
-padding-bottom: 10%;
-min-height:calc(100vh - 150px);
-  // 애니메이션
+  padding-top: 80px;
+  padding-bottom: 10%;
+  min-height:calc(100vh - 150px);
   @keyframes UP {
     0% {
       opacity: 0;
@@ -76,7 +70,6 @@ min-height:calc(100vh - 150px);
       opacity: 1;
     }
   }
-  // detail (2 페이지)
   .detail {
     .detail-name {
       position:relative;
@@ -156,7 +149,6 @@ min-height:calc(100vh - 150px);
       }
     }
   }
-  // detail (1024px)
   @media screen and (max-width: 1024px) {
     .detail-name {
       height:140px !important;

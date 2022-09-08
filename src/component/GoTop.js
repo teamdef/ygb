@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { IoIosArrowRoundUp } from 'react-icons/io'
+import { IoIosArrowRoundUp } from "react-icons/io";
 const GoTop = () => {
-  const [scrollY,setScrollY] = useState(0);
-  const [down, setDown] = useState(false); // 버튼 상태
+  // window 절대좌표 Y 값을 저장할 state
+  const [scrollY, setScrollY] = useState(0);
+  // 버튼에 class 부여하기 위한 state
+  const [down, setDown] = useState(false);
+
   useEffect(() => {
-    const watch = () => {
-      window.addEventListener("scroll", handleFollow);
-    };
-    watch();
-    return () => {
-      window.removeEventListener("scroll", handleFollow);
-    };
+    // scroll 이 감지되면 hnandleFollow 함수 실행
+    window.addEventListener("scroll", handleFollow);
   });
   const handleFollow = () => {
     setScrollY(window.pageYOffset);
@@ -34,38 +32,38 @@ const GoTop = () => {
     setDown(false); // Down의 값을 false로 바꿈 => 버튼 숨김
   };
   return (
-    <GoTopEl className={down ? 'active':''}>
-    <button
-      className="gotop"
-      onClick={handleTop} // 버튼 클릭시 함수 호출
-    >
-      <IoIosArrowRoundUp size="30" />
-    </button>
-  </GoTopEl>
+    <GoTopEl className={down ? "active" : ""}>
+      <button
+        className="gotop"
+        onClick={handleTop} // 버튼 클릭시 함수 호출
+      >
+        <IoIosArrowRoundUp size="30" />
+      </button>
+    </GoTopEl>
   );
 };
 // styled-components
 const GoTopEl = styled.div`
   position: fixed;
   z-index: 999;
-  bottom: 4%;
-  right: 4%;
+  bottom: 7.5rem;
+  right: 1.5rem;
   display: block;
   visibility: hidden;
   &.active {
-    visibility:visible;
+    visibility: visible;
   }
   button {
-    position:relative;
-    display:block;
+    position: relative;
+    display: block;
     border: 0;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     background-color: #fff;
-    box-shadow: 5px 5px 20px -15px #000;
+    filter: drop-shadow(2px 4px 15px rgba(0, 0, 0, 0.2));
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
     svg {
     }
   }

@@ -46,8 +46,6 @@ const PhotoView = ({ setShowImg, item }) => {
               type: "fraction",
               el: ".swiper-pagination",
             }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide !")}
             className="main-swiper"
             
           >
