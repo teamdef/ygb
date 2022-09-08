@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
@@ -9,7 +9,6 @@ import { changeDetail } from "../reducers/detailReducer";
 const Point = () => {
   const dispatch = useDispatch();
   const { value } = useSelector((state) => state.value);
-  const [loading, setLoading] = useState(true);
   const detailList = Data.region[value].detail.map(function (detail, index) {
     return (
       <Link
@@ -46,8 +45,7 @@ const Point = () => {
         <div className="detail-main">
           <div className="container">
             <h2 className="title">인기있는 관광지에요</h2>
-            {/* {loading ? <SkeletonPoint length={Data.region[value].detail.length}/> : ""} */}
-            <div className="card-wrap" onLoad={() => setLoading(false)}>
+            <div className="card-wrap">
               {detailList}
             </div>
           </div>
