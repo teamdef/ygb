@@ -54,7 +54,6 @@ const Main = () => {
 // styled-components
 const TemplateEl = styled.div`
   padding-top: 80px;
-  min-height:calc(100vh - 150px);
   // 애니메이션
   @keyframes UP {
     0% {

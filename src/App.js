@@ -2,6 +2,7 @@ import "./App.css";
 import Header from './component/Header'
 import GoTop from './component/GoTop'
 import Footer from './component/Footer'
+import AdBanner from "./component/AdBanner"
 import Main from "./pages/Main";
 import Point from "./pages/Point";
 import NotFound from "./pages/NotFound";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/404" element={<NotFound />}></Route>
         </Routes>
         <GoTop/>
+        <AdBanner/>
         <Footer/>
       </BrowserRouter>
     </div>
