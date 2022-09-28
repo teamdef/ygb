@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>요근방ㅣ관광지 근처 숙소를 한 눈에</title>
-    <!-- 검색엔진최적화 -->
-    <meta
-      name="description"
-      content="뚜벅이들을 위한 숙소 추천 서비스! 관광지 도보 15분내 숙소를 쉽게 찾아보세요."
-    />
-    <meta
-      name="keywords"
-      content="요근방,여행,숙소,숙박시설,도보,근처,제주도,성산일출봉,이중섭거리,섭지코지,중문관광단지,올레시장,곽지해수욕장,한담해변,협재해수욕장,금능해수욕장펜션,게하,게스트하우스,호텔,모텔,콘도,풀빌라"
-    />
-    <meta name="og:site_name" content="요근방ㅣ관광지 근처 숙소를 한 눈에" />
-    <meta name="og:title" content="요근방ㅣ관광지 근처 숙소를 한 눈에" />
-    <meta
-      name="og:description"
-      content="뚜벅이들을 위한 숙소 추천 서비스! 관광지 도보 15분내 숙소를 쉽게 찾아보세요."
-    />
-    <!-- <meta name="og:url" content="https://www." /> -->
-    <meta name="og:image" content="%PUBLIC_URL%/thumbnail.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>요근방ㅣ관광지 근처 숙소를 한 눈에</title>
+  <!-- 검색엔진최적화 -->
+  <meta name="description" content="뚜벅이들을 위한 숙소 추천 서비스! 관광지 도보 15분내 숙소를 쉽게 찾아보세요." />
+  <meta name="keywords"
+    content="요근방,여행,숙소,숙박시설,도보,근처,제주도,성산일출봉,이중섭거리,섭지코지,중문관광단지,올레시장,곽지해수욕장,한담해변,협재해수욕장,금능해수욕장펜션,게하,게스트하우스,호텔,모텔,콘도,풀빌라" />
+  <meta name="og:site_name" content="요근방ㅣ관광지 근처 숙소를 한 눈에" />
+  <meta name="og:title" content="요근방ㅣ관광지 근처 숙소를 한 눈에" />
+  <meta name="og:description" content="뚜벅이들을 위한 숙소 추천 서비스! 관광지 도보 15분내 숙소를 쉽게 찾아보세요." />
+  <!-- <meta name="og:url" content="https://www." /> -->
+  <meta name="og:image" content="%PUBLIC_URL%/thumbnail.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -37,27 +30,48 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MF74G2L');</script>
-    <!-- End Google Tag Manager -->
-  </head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5GVT87H');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MF74G2L"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body>
 
-    <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f278e30eee8fe627379a157074b51f3"
-    ></script>
-    <div id="root"></div>
-    <!--
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GVT87H" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- kakaomap -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1f278e30eee8fe627379a157074b51f3"></script>
+  <!-- // kakaomap -->
+
+  <!-- google AD -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1919598055512436"
+    crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+
+
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -67,5 +81,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
