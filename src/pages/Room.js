@@ -279,7 +279,6 @@ const Room = () => {
 // styled-components
 const RoomListLayout = styled.div`
   padding-top: 80px;
-  background-color: #f7f7fb;
   &.scroll {
     nav {
       top: 0;
