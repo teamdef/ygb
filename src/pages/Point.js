@@ -59,7 +59,6 @@ const Point = () => {
 const TemplateEl = styled.div`
   padding-top: 80px;
   padding-bottom: 10%;
-  min-height:calc(100vh - 150px);
   @keyframes UP {
     0% {
       opacity: 0;
