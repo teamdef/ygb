@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
+import Search from './Search'
 
 const Header = () => {
   // header Dom class 제어를 위한 ref 선언
@@ -34,6 +35,7 @@ const Header = () => {
         <Link to="/" className="logo">
           <img src="/logo.png"></img>
         </Link>
+        <Search/>
       </div>
     </HeaderEl>
   );
@@ -56,6 +58,7 @@ const HeaderEl = styled.div`
   }
   .container {
     position: relative;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     height: 80px;
