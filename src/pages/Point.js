@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Data from "../data.json";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { changeDetail } from "../reducers/detailReducer";
 
 const Point = () => {

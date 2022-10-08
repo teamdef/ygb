@@ -3,6 +3,7 @@ import categoryReducer from "./reducers/categoryReducer";
 import detailReducer from "./reducers/detailReducer";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import searchReducer from "./reducers/searchReducer";
 const persistConfig = {
   key: "root",
   // localStorage에 저장합니다.
@@ -13,6 +14,7 @@ const persistConfig = {
 export const rootReducer = combineReducers({
   value: categoryReducer,
   detail: detailReducer,
+  keyword: searchReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);
