@@ -19,7 +19,7 @@ const Point = () => {
           window.scrollTo({
             top: 0,
           });
-          dispatch(changeDetail(Data.region[value].detail[index]));
+          dispatch(changeDetail(Data.region[value].detail[index].items));
         }}
       >
         <img src={detail.image} alt="여행지이미지" />

@@ -29,7 +29,7 @@ const Room = () => {
 
   const [type, setType] = useState(0); // 숙박시설의 종류 (게하,모텔,호텔 등)
   const { detail } = useSelector((state) => state.detail); // 여행지 상세한 정보 불러오기
-  let items = detail.items; // 숙박시설정보 배열
+  let items = detail; // 숙박시설정보 배열
   let open = true; // 해당 여행지 숙소 정보 등록 유무
   // 숙소 분류가 0이 아닐 시 해당 타입의 숙소를 추려냄
   if (type !== 0) {
