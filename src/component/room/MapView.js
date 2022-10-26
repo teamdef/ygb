@@ -7,15 +7,29 @@ const { kakao } = window;
 
 const Map = ({ lat, lng, setShowMap }) => {
   useEffect(() => {
+    //마커가 표시 될 위치
+    let markerPosition = new kakao.maps.LatLng(lat, lng);
+
     let container = document.getElementById("map");
+    // 로드뷰 컨테이너
+    var RV_container = document.getElementById("roadview");
+
+    
+    // 좌표 근처 가장 가까운 파노라마 ID (panoID)를 찾음
+    // panoID는 로드뷰 촬영장소(좌표)에 부여된 ID로 유추됨
+    var roadviewClient = new kakao.maps.RoadviewClient(),
+      roadview = new kakao.maps.Roadview(RV_container);
+
+    roadviewClient.getNearestPanoId(markerPosition, 50, function (panoId) {
+      roadview.setPanoId(panoId, markerPosition);
+    });
+
     let options = {
       center: new window.kakao.maps.LatLng(lat, lng),
       level: 5,
     };
 
     let map = new window.kakao.maps.Map(container, options);
-    //마커가 표시 될 위치
-    let markerPosition = new kakao.maps.LatLng(lat, lng);
 
     // 마커를 생성
     let marker = new kakao.maps.Marker({
@@ -41,6 +55,7 @@ const Map = ({ lat, lng, setShowMap }) => {
       </div>
       <div className="map-area">
         <div id="map"></div>
+        <div id="roadview"></div>
       </div>
     </MapViewEl>
   );
@@ -54,9 +69,11 @@ const MapViewEl = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 99999;
-  background-color: #eee;
   .map-bar {
-    position: relative;
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -64,6 +81,7 @@ const MapViewEl = styled.div`
     height: 48px;
     border-bottom: 1px solid #e5e5ec;
     padding: 0 12.5%;
+    
     @media screen and (max-width: 480px) {
       padding: 0;
     }
@@ -89,14 +107,20 @@ const MapViewEl = styled.div`
   }
   .map-area {
     position: relative;
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
-    padding: 0 12.5%;
+    padding-top: 48px;
     @media screen and (max-width: 480px) {
-      padding: 0;
+      padding: 48px 0 0 0;
+      flex-direction: column;
     }
     #map {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    #roadview {
       position: relative;
       width: 100%;
       height: 100%;

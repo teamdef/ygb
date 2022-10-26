@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
-import Card from "../component/room/Card";
+import { Card } from "../component/room";
 import { TiWarningOutline } from "react-icons/ti";
 import { useSelector } from "react-redux";
 

@@ -1,8 +1,5 @@
 import "./App.css";
-import Header from './component/Header'
-import GoTop from './component/GoTop'
-import Footer from './component/Footer'
-import AdBanner from "./component/AdBanner"
+import {Header,GoTop,Footer,AdBanner} from './component'
 import Main from "./pages/Main";
 import Point from "./pages/Point";
 import NotFound from "./pages/NotFound";

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
-import SearchInput from './SearchInput'
+import { SearchInput } from "../component";
 
 const Header = () => {
   // header Dom class 제어를 위한 ref 선언
@@ -35,7 +35,7 @@ const Header = () => {
         <Link to="/" className="logo">
           <img src="/logo.png"></img>
         </Link>
-        <SearchInput/>
+        <SearchInput />
       </div>
     </HeaderEl>
   );
