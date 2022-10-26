@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Data from "../data.json";
-import Card from "../component/room/Card";
+import { Card } from "../component/room";
 import { BsArrowRight } from "react-icons/bs";
 import { changeDetail } from "../reducers/detailReducer";
 
@@ -77,8 +77,8 @@ const Search = () => {
                   >
                     <h2>{result.name}</h2>
                     <p>
-                      <span className="keyword">{regionRoom.length}</span> 개의 숙소가
-                      존재합니다.
+                      <span className="keyword">{regionRoom.length}</span> 개의
+                      숙소가 존재합니다.
                     </p>
                   </Link>
                 );

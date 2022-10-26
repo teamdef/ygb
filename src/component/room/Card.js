@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { RiMapPinLine } from "react-icons/ri";
 import { IoIosArrowForward } from "react-icons/io";
-import SkeletonCard from "./SkeletonCard";
-
-import MapView from "./MapView";
-import PhotoView from "./PhotoView";
+import { SkeletonCard, MapView, PhotoView } from "../room";
 
 const Card = ({ item }) => {
   const [showMap, setShowMap] = useState(false);
