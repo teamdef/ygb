@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Data from "../data.json";
-import { Card } from "../component/room";
-import { BsArrowRight } from "react-icons/bs";
+// import { Card } from "../component/room";
+// import { BsArrowRight } from "react-icons/bs";
 import { changeDetail } from "../reducers/detailReducer";
 
 const Search = () => {
@@ -26,18 +26,21 @@ const Search = () => {
     if (detail.length != 0) searchDetail = [...detail];
   }
   console.log(searchDetail);
-  // detail 내에 items(숙소) 배열 내에서 검색
-  let searchRoom = [];
-  for (let i = 0; i < Data.region.length; i++) {
-    /** region 배열 내 여행지에서 검색어가 포함된 name 의 배열을 찾아 detail 에 저장 */
-    for (let j = 0; j < Data.region[i].detail.length; j++) {
-      let room = Data.region[i].detail[j].items.filter((it) =>
-        new RegExp(keyword, "i").test(it.name)
-      );
-      if (room.length != 0) searchRoom.push(room);
-    }
-  }
-  searchRoom = searchRoom.flat();
+
+
+  // // detail 내에 items(숙소) 배열 내에서 검색
+  // let searchRoom = [];
+  // for (let i = 0; i < Data.region.length; i++) {
+  //   /** region 배열 내 여행지에서 검색어가 포함된 name 의 배열을 찾아 detail 에 저장 */
+  //   for (let j = 0; j < Data.region[i].detail.length; j++) {
+  //     let room = Data.region[i].detail[j].items.filter((it) =>
+  //       new RegExp(keyword, "i").test(it.name)
+  //     );
+  //     if (room.length != 0) searchRoom.push(room);
+  //   }
+  // }
+  // searchRoom = searchRoom.flat();
+
   return (
     <SearchEL>
       <div className="container">
@@ -115,7 +118,7 @@ const Search = () => {
               })}
             </ResultWrap>
           </div>
-
+{/* 숙소 검색
           <div>
             <h2>
               숙소<span className="keyword">{`${searchRoom.length}`}</span>
@@ -159,7 +162,7 @@ const Search = () => {
             ) : (
               ""
             )}
-          </div>
+          </div> */}
         </SearchContent>
       </div>
     </SearchEL>
@@ -169,6 +172,7 @@ const Search = () => {
 const SearchEL = styled.div`
   padding: 80px 12.5% 10% 12.5%;
   position: relative;
+  min-height: calc(100vh - 150px);
   display: block;
   color: #888;
   .keyword {
