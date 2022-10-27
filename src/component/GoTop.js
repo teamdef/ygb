@@ -46,8 +46,8 @@ const GoTop = () => {
 const GoTopEl = styled.div`
   position: fixed;
   z-index: 999;
-  bottom: 7.5rem;
-  right: 1.5rem;
+  bottom: 3rem;
+  right: 3rem;
   display: block;
   visibility: hidden;
   &.active {

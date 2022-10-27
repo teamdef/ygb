@@ -55,6 +55,10 @@ const SearchInputEL = styled.div`
     height: 20px;
     background-color: transparent;
     border: none;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 export default SearchInput;

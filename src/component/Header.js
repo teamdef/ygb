@@ -33,7 +33,8 @@ const Header = () => {
     <HeaderEl ref={header}>
       <div className="container">
         <Link to="/" className="logo">
-          <img src="/logo.png"></img>
+          <img src="/logo.png" />
+          <span style={{padding: "0 0 10px 10px"}}>Beta</span>
         </Link>
         <SearchInput />
       </div>
@@ -63,12 +64,15 @@ const HeaderEl = styled.div`
     display: flex;
     height: 80px;
     .logo {
-      width: 100px;
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: end;
+      font-size: 1.2rem;
+      color: #aaa;
+      img {
+        display: block;
+        width: 120px;
+      }
     }
   }
 `;
