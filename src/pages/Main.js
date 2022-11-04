@@ -10,7 +10,18 @@ import { changeCategory } from "../reducers/categoryReducer";
 const Main = () => {
   // data.json 파일의 지역(region) 테이블을 가져옴
   const region = Data.region;
+  // 이미지를 비동기로 불러옴. 병렬로 프리로드
+  const preloading = (imageArray) => {
+    let n = imageArray.length;
+    for (let i = 0; i < n; i++) {
+      let img = new Image();
+      img.src = imageArray[i].image;
+      console.log(img);
+    }
+  };
+  preloading(Data.region);
   const dispatch = useDispatch();
+  
   const regionList = region.map((region, i) =>
     region.open ? (
       <Link
