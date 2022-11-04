@@ -8,8 +8,6 @@ import { useDispatch } from "react-redux";
 import { changeCategory } from "../reducers/categoryReducer";
 
 const Main = () => {
-  // data.json 파일의 지역(region) 테이블을 가져옴
-  const region = Data.region;
   // 이미지를 비동기로 불러옴. 병렬로 프리로드
   const preloading = (imgArr) => {
     let n = imgArr.length;
@@ -20,6 +18,8 @@ const Main = () => {
     }
   };
   preloading(Data.region);
+  // data.json 파일의 지역(region) 테이블을 가져옴
+  const region = Data.region;
   const dispatch = useDispatch();
   
   const regionList = region.map((region, i) =>
